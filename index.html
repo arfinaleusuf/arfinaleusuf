@@ -14,21 +14,37 @@
 </head>
 
 <body>
-    <nav id="nav" class="bg-black px-12 py-5">
-        <div class="flex justify-between items-center border border-b-white mt-10">
-            <h1 class="text-white text-lg md:text-3xl lg:text-5xl mb-3">Arfin Al Eusuf</h1>
-            <div class="flex flex-row justify-center items-center">
-                <ul class="flex text-gray-300 gap-2 lg:gap-8 text-sm md:text-lg lg:text-xl">
-                    <li><a class="hover:text-white" href="#Project">Projects</a></li>
-                    <li><a class="hover:text-white" href="#about">About</a></li>
-                    <li><a class="hover:text-white" href="#contract">Contract</a></li>
-                </ul>
+    <!-- NavBar -->
+    <nav class="">
+        <div class="navbar bg-black text-white shadow-sm lg:px-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
+                        <li><a class="" href="#about">About</a></li>
+                        <li><a class="" href="#Project">Projects</a></li>
+                        <li><a class="" href="#contract">Contract</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost text-4xl">Arfin Al Eusuf</a>
+            </div>
+            <div class="navbar-end">
+                <img class="lg:w-20 lg:h-20 w-12 h-12" src="image/Arfin_Al_Eusuf_2.0_-removebg-preview.png" alt="">
             </div>
         </div>
     </nav>
     <main>
         <!-- hero Section -->
-        <div class="bg-black flex text-white items-center relative mb-24">
+        <div class="bg-black flex text-white items-center relative mb-12">
             <div><img src="image/my-image-1.jpeg.jpg" alt=""></div>
             <div class="absolute left-50 lg:left-170">
                 <h3 class="text-xl md:text-2xl mx-4">Hi, I am </h3>
@@ -176,24 +192,21 @@
             </div>
             <div class="carousel mb-32">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="image/lecture.jpg"
-                        class="w-full" />
+                    <img src="image/lecture.jpg" class="w-full" />
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="image/debate.jpg"
-                        class="w-full" />
+                    <img src="image/debate.jpg" class="w-full" />
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="image/debater2..jpeg"
-                        class="w-full" />
+                    <img src="image/debater2..jpeg" class="w-full" />
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
