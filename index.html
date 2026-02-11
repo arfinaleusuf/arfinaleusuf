@@ -1,332 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arfin Al Eusuf</title>
+    <title>Arfin Al Eusuf | Portfolio</title>
     <link rel="shortcut icon" href="image/Arfin_Al_Eusuf_2.0_-removebg-preview.png" type="image/x-icon">
-    <!-- tailwindCss and DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font Awsone -->
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9ad954d059.js" crossorigin="anonymous"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-outfit: 'Outfit', sans-serif;
+            --color-primary: #6366f1; /* Indigo 500 */
+            --color-secondary: #0ea5e9; /* Sky 500 */
+        }
+        
+        body {
+            font-family: var(--font-outfit);
+            @apply bg-slate-950 text-slate-300 antialiased selection:bg-indigo-500 selection:text-white;
+        }
+
+        .glass-nav {
+            @apply bg-slate-950/80 backdrop-blur-md border-b border-slate-800;
+        }
+
+        .card-gradient {
+            @apply bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300;
+        }
+
+        .text-gradient {
+            @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400;
+        }
+
+        .section-padding {
+            @apply py-20 px-6 md:px-12 lg:px-24;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- NavBar -->
-    <nav id="nav">
-        <div class="navbar bg-black text-white shadow-sm lg:px-8">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
+<body class="overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 transform" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img class="h-10 w-10 object-cover rounded-full ring-2 ring-indigo-500/50"
+                        src="image/Arfin_Al_Eusuf_2.0_-removebg-preview.png" alt="Logo">
+                    <span class="font-bold text-xl tracking-wide text-white">Arfin.dev</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="hover:text-white transition-colors px-3 py-2 rounded-md font-medium text-sm lg:text-base">Home</a>
+                        <a href="#about"
+                            class="hover:text-white transition-colors px-3 py-2 rounded-md font-medium text-sm lg:text-base">About</a>
+                        <a href="#projects"
+                            class="hover:text-white transition-colors px-3 py-2 rounded-md font-medium text-sm lg:text-base">Projects</a>
+                        <a href="#activities"
+                            class="hover:text-white transition-colors px-3 py-2 rounded-md font-medium text-sm lg:text-base">Activities</a>
+                        <a href="#contact"
+                            class="ml-4 px-6 py-2.5 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold transition-all shadow-lg shadow-indigo-500/20 text-sm lg:text-base">Contact
+                            Me</a>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
-                        <li><a class="" href="#about">About</a></li>
-                        <li><a class="" href="#Project">Projects</a></li>
-                        <li><a class="" href="#contract">Contract</a></li>
-                    </ul>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none transition-colors">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <div class="navbar-center">
-                <a class="btn btn-ghost text-2xl lg:text-4xl">Arfin Al Eusuf</a>
-            </div>
-            <div class="navbar-end">
-                <img class="lg:w-20 lg:h-20 w-12 h-12" src="image/Arfin_Al_Eusuf_2.0_-removebg-preview.png" alt="">
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-slate-900 border-b border-slate-800 animate-fade-in-down" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-slate-800 transition-colors"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800 transition-colors"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+                <a href="#projects"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800 transition-colors"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="#activities"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800 transition-colors"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Activities</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 font-semibold"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact Me</a>
             </div>
         </div>
     </nav>
-    <main>
-        <!-- hero Section -->
-        <div class="bg-black flex text-white items-center relative mb-12">
-            <div><img src="image/Profile image.png" alt="" class="lg:h-200 lg:w-200 md:h-150 md:w-150 h-100 w-100"></div>
-            <div class="absolute left-50 lg:left-170">
-                <h3 class="text-xl md:text-2xl mx-4">Hi, I am </h3>
-                <h1 class="mx-4 text-xl md:text-3xl font-bold">Md Arfin Al Eusuf</h1>
-                <p class="text-sm lg:text-lg mx-4 max-w-4/6">A curious student with a growing love for programming.
-                    Every day is an opportunity to learn something new in the vast landscape of code. I'm excited to
-                    share my progress and discoveries as I develop my skills.</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+        <!-- Background decorative blobs -->
+        <div
+            class="absolute top-0 left-1/2 w-96 h-96 bg-indigo-500/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] translate-x-1/3 translate-y-1/3 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <div
+                        class="inline-block px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 mb-6 shadow-sm">
+                        <span class="text-sm font-medium text-indigo-400 tracking-wide">👋 Welcome to my
+                            portfolio</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                        Hi, I'm <br>
+                        <span class="text-gradient">Arfin Al Eusuf</span>
+                    </h1>
+                    <p
+                        class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        A curious student and passionate developer exploring the vast landscape of code. I build
+                        accessible, pixel-perfect, and performant web experiences.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#projects"
+                            class="group px-8 py-3.5 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold transition-all shadow-lg shadow-indigo-600/25 w-full sm:w-auto flex items-center justify-center gap-2">
+                            View My Work <i
+                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#contact"
+                            class="px-8 py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-semibold transition-all border border-slate-700 hover:border-slate-600 w-full sm:w-auto">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="mt-12 flex items-center justify-center lg:justify-start gap-8 text-slate-400">
+                        <a href="https://github.com/ArfinAlEusuf" target="_blank"
+                            class="hover:text-white hover:-translate-y-1 transition-all duration-300 text-2xl"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/arfinaleusuf/" target="_blank"
+                            class="hover:text-blue-400 hover:-translate-y-1 transition-all duration-300 text-2xl"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/ArfinAlEusuf/" target="_blank"
+                            class="hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 text-2xl"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/arfinaleusuf/" target="_blank"
+                            class="hover:text-pink-500 hover:-translate-y-1 transition-all duration-300 text-2xl"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-cyan-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                        </div>
+                        <img src="image/Profile image.png" alt="Arfin Al Eusuf"
+                            class="relative w-full h-full object-cover rounded-3xl rotate-3 group-hover:rotate-0 transition-transform duration-500 shadow-2xl border border-slate-800 bg-slate-900 transform">
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Project -->
-        <section>
-            <div id="Project" class="mx-8 md:mx-16 lg:mx-24 mb-24 mt-24">
-                <div class="mb-10">
-                    <h1 class="text-3xl lg:text-5xl text-center font-bold mb-8">My projects</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                        <!-- first project -->
-                        <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class="rounded-xl" src="image/TeaHouse.png" alt="">
-                                <br>
-                                <div class="mx-1 justify-between">
-                                    <h3 class="text-xl md:text-2xl font-bold">Tea House</h3>
-                                    <br>
-                                    <p class="sm:text-sm md:text-lg text-gray-500">this is my first project as a student
-                                        of
-                                        programming learner</p>
-                                    <br>
-                                    <a class="hover:text-orange-500 font-semibold"
-                                        href="https://tea-house-delta.vercel.app/">Visit
-                                        Site <i class="fa-solid fa-cloud"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- second project -->
-                        <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class="rounded-xl" src="image/Penguin Fashion.png" alt="">
-                                <br>
-                                <div class="mx-1">
-                                    <h3 class="text-xl md:text-2xl font-semibold">Penguin Fashion</h3>
-                                    <br>
-                                    <p class="sm:text-sm md:text-lg text-gray-500">this was a demo site for a fashion
-                                        brand.
-                                        i was trying to make it simple and user
-                                        friendly.</p>
-                                    <br>
-                                    <a class="hover:text-orange-500 font-semibold"
-                                        href="https://penguin-fashion-using-tailwind-smoky.vercel.app/">Visit
-                                        Site <i class="fa-solid fa-cloud"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Third project -->
-                        <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                            <div class="m-3">
-                                <img class="rounded-xl" src="image/number converter.png" alt="">
-                                <br>
-                                <div class="mx-1 flex flex-col">
-                                    <h3 class="text-xl md:text-2xl font-bold">Number Converter</h3>
-                                    <br>
-                                    <p class="sm:text-sm md:text-lg text-gray-500">this is in under constraction. it is
-                                        coming soon</p>
-                                    <br>
-                                    <a class="hover:text-orange-500 font-semibold" href="#">Visit
-                                        Site <i class="fa-solid fa-cloud"></i><i
-                                            class="fa-light fa-globe-pointer"></i></a>
-                                </div>
-                            </div>
-                        </div>
+    </section>
 
-                    </div>
-                </div>
+    <!-- About / Education Section -->
+    <section id="about" class="section-padding bg-slate-900/30 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-indigo-400 font-semibold tracking-wider text-sm uppercase">Background</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-2 mb-4">About Me & Education</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-cyan-500 mx-auto rounded-full"></div>
             </div>
-        </section>
-        <!-- About Me -->
-        <section>
-            <div id="about" class="mx-8 md:mx-16 lg:mx-24 mb-24">
-                <h1 class="text-3xl lg:text-5xl text-center font-bold mb-8">Educational Qualification</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                    <!-- Primary school -->
-                    <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                        <div class="m-3  flex flex-col">
-                            <img class="rounded-xl" src="image/primary.jpeg.jpg" alt="">
-                            <br>
-                            <div class="mx-1">
-                                <h3 class="text-xl md:text-2xl font-bold">Noluapara Govt. Primary School</h3>
-                                <br>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Digree : <b>PSC</b></p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Starting Year: 2010</p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Passing Year : 2016</p>
-                                <p class="font-semibold">GPA : 4.75</p>
-                                <br>
-                                <a class="hover:text-orange-500 font-semibold"
-                                    href="https://maps.app.goo.gl/akNSJDgbqXUdrKjo9">Visit
-                                    School <i class="fa-solid fa-school"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- high school -->
-                    <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                        <div class="m-3  flex flex-col">
-                            <img class="rounded-xl" src="image/mkcm.jpeg.jpg" alt="">
-                            <br>
-                            <div class="mx-1">
-                                <h3 class="text-xl md:text-2xl font-bold">M.K.C.M. Pilot Govt. High School </h3>
-                                <br>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Digree : <b>SSC</b></p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Starting Year: 2017</p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Passing Year : 2022</p>
-                                <p class="font-semibold">GPA : 4.83</p>
-                                <br>
-                                <a class="hover:text-orange-500 font-semibold"
-                                    href="https://www.facebook.com/mkcmschool">Visit
-                                    School <i class="fa-solid fa-school"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- college -->
-                    <div class="hover:shadow-2xl border border-gray-200 rounded-xl flex flex-col drop-shadow-xl">
-                        <div class="m-3">
-                            <img class="rounded-xl" src="image/college.jpg" alt="">
-                            <br>
-                            <div class="mx-1 flex flex-col">
-                                <h3 class="text-xl md:text-2xl font-bold">Mymensingh Commerce College</h3>
-                                <br>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Digree : <b>HSC</b></p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Starting Year: 2023</p>
-                                <p class="sm:text-sm md:text-lg text-gray-500">Passing Year : 2024</p>
-                                <p class="font-semibold">GPA : 5.00</p>
-                                <br>
-                                <a class="hover:text-orange-500 font-semibold"
-                                    href="https://www.sohopathi.com/mymensingh-commerce-college/?GoogleAutoSignIn">Visit
-                                    college <i class="fa-solid fa-school"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </section>
-        <!-- Extra curricular Activities -->
-        <section class="">
-            <div class="mx-8 md:mx-16 lg:mx-24 mb-24">
-                <h1 class="text-3xl lg:text-5xl text-center font-bold mb-8">Extra Curricular Activities</h1>
-            </div>
-            <div class="carousel mb-32">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="image/lecture.jpg" class="lg:w-screen lg:h-screen w-full h-full lg:mx-24 rounded-xl" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="image/debate.jpg" class="lg:w-screen lg:h-screen w-full h-full lg:mx-24 rounded-xl" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <div class="lg:mx-24">
-                        <img src="image/debater2..jpeg" class="lg:w-screen lg:h-screen w-full h-full rounded-xl" />
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="image/slide 4.jpg" class="lg:w-screen lg:h-screen w-full h-full lg:mx-24 rounded-xl" />
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <!-- About Text -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <i class="fa-solid fa-user-astronaut text-indigo-400"></i> Who I Am
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        I am a dedicated learner with a strong foundation in academic excellence and a burning passion
+                        for technology. My journey started in a small town school and has led me to explore the
+                        intricate world of software development.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        Beyond coding, I am an active participant in extracurricular activities like debating, which has
+                        sharpened my critical thinking and communication skills. I believe in continuous growth and
+                        facing challenges head-on.
+                    </p>
 
-        <!-- contract -->
-        <section>
-            <div id="contract" class="mx-8 md:mx-16 lg:mx-24 mb-24">
-                <div class="mb-10">
-                    <h1 class="text-3xl lg:text-5xl text-center font-bold mb-8">Contract</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <!-- Linked in -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
                         <div
-                            class="hover:shadow-2xl border border-gray-50 bg-gray-100 rounded-3xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class="rounded-3xl" src="image/LinkedIn_logo_initials.png.webp" alt="">
-                                <br>
-                                <div class="mx-1">
-                                    <h3 class="text-xl md:text-2xl font-bold">Linked In</h3>
-                                    <br>
-                                    <button
-                                        class="hover:from-black hover:to-black px-3 py-1 bg-gradient-to-r from-gray-200 to bg-blue-600 border border-gray-50 rounded-md hover:text-white">
-                                        <a class="font-semibold" href="https://www.linkedin.com/in/arfinaleusuf/">View
-                                            Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </button>
-
-                                </div>
+                            class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/30 transition-colors">
+                            <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-code text-indigo-400 text-xl"></i>
                             </div>
+                            <h4 class="font-bold text-white text-lg">Web Dev</h4>
+                            <p class="text-sm text-slate-500 mt-1">HTML, CSS, JS, Tailwind</p>
                         </div>
-                        <!-- Github -->
                         <div
-                            class="hover:shadow-2xl border border-gray-50 bg-gray-100 rounded-3xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class=" rounded-3xl" src="image/github-removebg-preview.png" alt="">
-                                <br>
-                                <div class="mx-1">
-                                    <h3 class="text-xl md:text-2xl font-bold">Github</h3>
-                                    <br>
-                                    <button
-                                        class="hover:from-black hover:to-black px-3 py-1 bg-gradient-to-r from-gray-200 to-orange-700 border border-gray-50 rounded-md hover:text-white">
-                                        <a class=" font-semibold" href="https://github.com/ArfinAlEusuf">View Profile <i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </button>
-
-                                </div>
+                            class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/30 transition-colors">
+                            <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-microphone-lines text-cyan-400 text-xl"></i>
                             </div>
+                            <h4 class="font-bold text-white text-lg">Debating</h4>
+                            <p class="text-sm text-slate-500 mt-1">Public Speaking & Leadership</p>
                         </div>
-                        <!-- facebook -->
-                        <div
-                            class="hover:shadow-2xl border-gray-50 bg-gray-100 rounded-3xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class="rounded-3xl" src="image/Facebook_f_logo_(2021).svg.png" alt="">
-                                <br>
-                                <div class="mx-1">
-                                    <h3 class="text-xl md:text-2xl font-bold">Facebook</h3>
-                                    <br>
-                                    <button
-                                        class="hover:from-black hover:to-black px-3 py-1 bg-gradient-to-r from-gray-200 to bg-blue-600 border border-gray-50 rounded-md hover:text-white">
-                                        <a class="font-semibold" href="https://www.facebook.com/ArfinAlEusuf/">View
-                                            Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Instagram -->
-                        <div
-                            class="hover:shadow-2xl border border-gray-50 bg-gray-100 rounded-3xl flex flex-col drop-shadow-xl">
-                            <div class="m-3  flex flex-col">
-                                <img class="rounded-3xl" src="image/Instagram_icon.png" alt="">
-                                <br>
-                                <div class="mx-1">
-                                    <h3 class="text-xl md:text-2xl font-bold">Instagram</h3>
-                                    <br>
-                                    <button
-                                        class=" hover:from-black hover:to-black px-3 py-1 bg-gradient-to-r from-orange-100 to bg-pink-600 border border-gray-50 rounded-md hover:text-white">
-                                        <a class="font-semibold" href="https://www.instagram.com/arfinaleusuf/">View
-                                            Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
 
-            </div>
-        </section>
+                <!-- Education Timeline -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-cyan-400"></i> Education Journey
+                    </h3>
+                    <div class="relative border-l border-slate-800 ml-3 space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative pl-8 group">
+                            <div
+                                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-indigo-500 border-4 border-slate-950 group-hover:scale-125 transition-transform">
+                            </div>
+                            <div
+                                class="bg-slate-900 p-6 rounded-2xl border border-slate-800 group-hover:border-slate-700 transition-colors">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="text-xl font-bold text-white">HSC (Higher Secondary)</h4>
+                                    <span
+                                        class="text-xs font-bold px-2 py-1 rounded bg-indigo-500/10 text-indigo-400">2023
+                                        - 2024</span>
+                                </div>
+                                <h5 class="text-slate-300 font-medium text-sm mb-3">Mymensingh Commerce College</h5>
+                                <p class="text-slate-400 text-sm">Achieved GPA <span
+                                        class="text-white font-bold">5.00</span>. Focused on Business Studies and
+                                    developing a disciplined academic routine.</p>
+                            </div>
+                        </div>
 
+                        <!-- Item 2 -->
+                        <div class="relative pl-8 group">
+                            <div
+                                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-cyan-500 group-hover:scale-125 transition-all">
+                            </div>
+                            <div
+                                class="bg-slate-900 p-6 rounded-2xl border border-slate-800 group-hover:border-slate-700 transition-colors">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="text-xl font-bold text-white">SSC (Secondary School)</h4>
+                                    <span class="text-xs font-bold px-2 py-1 rounded bg-slate-800 text-slate-500">2017 -
+                                        2022</span>
+                                </div>
+                                <h5 class="text-slate-300 font-medium text-sm mb-3">M.K.C.M. Pilot Govt. High School
+                                </h5>
+                                <p class="text-slate-400 text-sm">Achieved GPA <span
+                                        class="text-white font-bold">4.83</span>. Active in school clubs and science
+                                    fairs.</p>
+                            </div>
+                        </div>
 
-    </main>
-    <footer>
-        <div class="flex justify-between items-center bg-black p-10 text-white">
-            <div class="justify-center items-center lg:mx-24 mx-4">
-                <p class="text-white text-center mt-5"><i class="fa-solid fa-copyright"></i> Arfin Al Eusuf. All righrs
-                    reserved</p>
+                        <!-- Item 3 -->
+                        <div class="relative pl-8 group">
+                            <div
+                                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-cyan-500 group-hover:scale-125 transition-all">
+                            </div>
+                            <div
+                                class="bg-slate-900 p-6 rounded-2xl border border-slate-800 group-hover:border-slate-700 transition-colors">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="text-xl font-bold text-white">PSC (Primary School)</h4>
+                                    <span class="text-xs font-bold px-2 py-1 rounded bg-slate-800 text-slate-500">2010 -
+                                        2016</span>
+                                </div>
+                                <h5 class="text-slate-300 font-medium text-sm mb-3">Noluapara Govt. Primary School</h5>
+                                <p class="text-slate-400 text-sm">Achieved GPA 4.75. The foundation of my academic
+                                    journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="lg:mx-24 mx-4">
-                <ul class="flex flex-col justify-center gap-4">
-                    <li>Privacy</li>
-                    <li>Terms of Service</li>
-                    <Li class="hover:text-gray-500"><a href="#nav"><i class="fa-solid fa-house"></i></a></Li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 font-semibold tracking-wider text-sm uppercase">Portfolio</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-2 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Check out some of the projects I've built to practice
+                    my skills and solve problems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <article class="card-gradient rounded-2xl overflow-hidden group flex flex-col h-full">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="image/TeaHouse.png" alt="Tea House"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://tea-house-delta.vercel.app/" target="_blank"
+                                class="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg">Visit
+                                Site <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Tea
+                            House</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3 leading-relaxed flex-1">My first project as a
+                            programming learner. A simple, aesthetic landing page for a tea shop designed to be soothing
+                            and informative.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-indigo-300">HTML</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-indigo-300">CSS</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-indigo-300">UI/UX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card-gradient rounded-2xl overflow-hidden group flex flex-col h-full">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="image/Penguin Fashion.png" alt="Penguin Fashion"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://penguin-fashion-using-tailwind-smoky.vercel.app/" target="_blank"
+                                class="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg">Visit
+                                Site <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+                            Penguin Fashion</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3 leading-relaxed flex-1">A demo e-commerce
+                            site for a fashion brand. Focused on user-friendly layout, clear typography, and full
+                            responsiveness across devices.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-cyan-300">Tailwind</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-cyan-300">E-commerce</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="card-gradient rounded-2xl overflow-hidden group flex flex-col h-full">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="image/number converter.png" alt="Number Converter"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-slate-950/80 flex items-center justify-center backdrop-blur-[2px]">
+                            <span
+                                class="text-white font-bold tracking-widest border-2 border-white/20 px-6 py-2 rounded-lg bg-black/30">COMING
+                                SOON</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+                            Number Converter</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3 leading-relaxed flex-1">A utility tool for
+                            converting numbers between different bases (Binary, Hex, Decimal). Designed to be fast and
+                            accurate. Currently under construction.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-indigo-300">JavaScript</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-semibold text-indigo-300">Logic</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Gallery -->
+    <section id="activities" class="section-padding bg-slate-900/30 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-indigo-400 font-semibold tracking-wider text-sm uppercase">Lifestyle</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-2 mb-4">Beyond Coding</h2>
+                <div class="w-20 h-1.5 bg-indigo-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 mt-4">Snapshots from my extra-curricular journey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 h-auto md:h-[600px] auto-rows-[200px]">
+                <!-- Item 1: Large -->
+                <div class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group shadow-xl">
+                    <img src="image/lecture.jpg" alt="Lecture"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-8 opacity-90 hover:opacity-100 transition-opacity">
+                        <div>
+                            <span
+                                class="px-3 py-1 bg-indigo-600 rounded-full text-xs font-bold text-white mb-2 inline-block">Public
+                                Speaking</span>
+                            <h3 class="text-white text-xl font-bold">Lecture Sessions</h3>
+                            <p class="text-slate-300 text-sm mt-1">Sharing knowledge and leading discussions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative rounded-3xl overflow-hidden group shadow-xl">
+                    <img src="image/debate.jpg" alt="Debate"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="relative rounded-3xl overflow-hidden group shadow-xl">
+                    <img src="image/debater2..jpeg" alt="Debater"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <!-- Item 4: Wide -->
+                <div class="md:col-span-2 relative rounded-3xl overflow-hidden group shadow-xl">
+                    <img src="image/slide 4.jpg" alt="Activity"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-6">
+                        <p class="text-white font-semibold">Team Collaborations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-12">
+                <span class="text-cyan-400 font-semibold tracking-wider text-sm uppercase">Get in touch</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-2 mb-4">Let's Connect</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 mt-6 text-lg max-w-2xl mx-auto">
+                    I'm currently looking for new opportunities and collaborations. Whether you have a question about my
+                    work or just want to say hi, feel free to reach out via social media!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="https://www.linkedin.com/in/arfinaleusuf/" target="_blank"
+                    class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/20">
+                    <div
+                        class="w-14 h-14 mx-auto bg-slate-800 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center transition-colors mb-4 text-white shadow-inner">
+                        <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">LinkedIn</h3>
+                    <p class="text-xs text-slate-500 mt-2 font-medium">Connect professionally</p>
+                </a>
+
+                <a href="https://github.com/ArfinAlEusuf" target="_blank"
+                    class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-gray-500/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900/20">
+                    <div
+                        class="w-14 h-14 mx-auto bg-slate-800 group-hover:bg-gray-700 rounded-2xl flex items-center justify-center transition-colors mb-4 text-white shadow-inner">
+                        <i class="fa-brands fa-github text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">GitHub</h3>
+                    <p class="text-xs text-slate-500 mt-2 font-medium">Check my code</p>
+                </a>
+
+                <a href="https://www.facebook.com/ArfinAlEusuf/" target="_blank"
+                    class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-blue-600/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/20">
+                    <div
+                        class="w-14 h-14 mx-auto bg-slate-800 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center transition-colors mb-4 text-white shadow-inner">
+                        <i class="fa-brands fa-facebook-f text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Facebook</h3>
+                    <p class="text-xs text-slate-500 mt-2 font-medium">Social updates</p>
+                </a>
+
+                <a href="https://www.instagram.com/arfinaleusuf/" target="_blank"
+                    class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-pink-500/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-pink-900/20">
+                    <div
+                        class="w-14 h-14 mx-auto bg-slate-800 group-hover:bg-pink-600 rounded-2xl flex items-center justify-center transition-colors mb-4 text-white shadow-inner">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Instagram</h3>
+                    <p class="text-xs text-slate-500 mt-2 font-medium">Daily life</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="text-center md:text-left">
+                    <span class="font-bold text-2xl tracking-wide text-white block mb-2">Arfin.dev</span>
+                    <p class="text-slate-500 text-sm">Building digital experiences with passion.</p>
+                </div>
+                <div class="flex space-x-8 text-slate-400 font-medium">
+                    <a href="#home" class="hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-sm text-center md:text-left">
+                    &copy; <span id="year"></span> Arfin Al Eusuf. All rights reserved.
+                </p>
+                <div class="text-slate-600 text-sm flex items-center gap-1">
+                    Designed with <i class="fa-solid fa-heart text-red-500 animate-pulse"></i> and Tailwind CSS
+                </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-xl');
+                navbar.classList.add('bg-slate-950/90');
+                navbar.classList.remove('bg-slate-950/80');
+            } else {
+                navbar.classList.remove('shadow-xl');
+                navbar.classList.remove('bg-slate-950/90');
+                navbar.classList.add('bg-slate-950/80');
+            }
+        });
+    </script>
 </body>
 
 </html>
