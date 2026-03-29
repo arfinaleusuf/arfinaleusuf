@@ -11,7 +11,7 @@
 - Problem solving
 
 ## 📊 GitHub Stats
-![Stats](https://github-readme-stats.vercel.app/api?username=ArfinAlEusuf)
+![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf)
 
 ## 📫 Contact
 - Email: arfinaleusuf
