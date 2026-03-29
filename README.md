@@ -1,4 +1,4 @@
-# Hi, I'm Arfin 👋
+# Hi, I'm Arfin Al Eusuf 👋
 
 💻 Competitive Programmer  
 📚 Learning Data Structures & Algorithms  
@@ -11,7 +11,7 @@
 - Problem solving
 
 ## 📊 GitHub Stats
-![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf)
+![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=tokyonight)
 
 ## 📫 Contact
-- Email: arfinaleusuf
+- Email: arfinaleusuf@gmail.com
