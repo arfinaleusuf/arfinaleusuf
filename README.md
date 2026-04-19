@@ -15,3 +15,9 @@
 
 ## 📫 Contact
 - Email: arfinaleusuf@gmail.com
+- 🔗 &nbsp;**Connect with me**
+
+| | | | | |
+|:--:|:--:|:--:|:--:|:--:|
+| <a href="https://x.com/ArfinAlEusuf"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" width="40"></a> | <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" width="40"></a> | <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40"></a> |
+| | | | | |
