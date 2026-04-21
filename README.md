@@ -34,7 +34,7 @@
 
 #### 🧰 Tools & Platform
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,python,pycharm" />
+  <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
 #### 🎨 web devolpment
