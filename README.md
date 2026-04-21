@@ -28,19 +28,13 @@
 
 ### 🌐 Connect with Me
 <p>
+  <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=mail" /></a>
   <a href="https://github.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=github" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
-  <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=facebook" /></a>
+  <a href="https://www.facebook.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=facebook" /></a>
   <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=instagram" /></a>
 </p>
-
-  
-- 🔗 &nbsp;**Connect with me**
-<br> <br>
-<a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" width="40"></a>
-<a href=""><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" width="40"></a>
-<a href="https://www.instagram.com/arfinaleusuf/"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40"></a> 
 
 #### 🧰 Tools & Platform
 <p>
