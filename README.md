@@ -34,7 +34,7 @@
   <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=instagram" /></a>
   <a href="https://discord.com/users/1339686978857209926"><img src="https://skillicons.dev/icons?i=discord" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
-  <a href="https://facebook.com/arfinaleusuf"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/medium/colored/facebook.svg" /></a>
+  <a href="https://facebook.com/arfinaleusuf"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/facebook.svg" /></a>
 </p>
 
 #### 🧰 Tools & Platform
