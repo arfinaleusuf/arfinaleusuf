@@ -13,10 +13,6 @@
 
 ### 🛠️ Skills
 
-#### 🎨 web devolpment
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
-</p>
 🎨 Programming Language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
@@ -40,4 +36,8 @@
 <p>
   <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,python,pycharm" />
 </p>
-
+## 🔧 Extra Skills 
+#### 🎨 web devolpment
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
+</p>
