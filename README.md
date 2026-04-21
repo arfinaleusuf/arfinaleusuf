@@ -11,6 +11,18 @@
 - Problem solving
 - Software Development
 
+### 🛠️ Skills
+
+#### 🎨 web devolpment
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
+</p>
+🎨 Programming Language
+<p>
+  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
+</p>
+
+
 ## 📊 GitHub Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=tokyonight)
 
@@ -29,13 +41,3 @@
   <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,python,pycharm" />
 </p>
 
-### 🛠️ Skills
-
-#### 🎨 web devolpment
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
-</p>
-#### 🎨 **Programming Language**
-<p>
-  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
-</p>
