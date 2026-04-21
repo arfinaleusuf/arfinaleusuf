@@ -36,7 +36,7 @@
 <p>
   <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,python,pycharm" />
 </p>
-## 🔧 Extra Skills 
+
 #### 🎨 web devolpment
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
