@@ -31,6 +31,8 @@
   <a href="https://github.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=github" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
+  <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=facebook" /></a>
+  <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=instagram" /></a>
 </p>
 
   
