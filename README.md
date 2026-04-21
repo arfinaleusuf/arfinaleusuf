@@ -26,5 +26,5 @@
 
 #### 🧰 Tools & Platform
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,vercel" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" />
 </p>
