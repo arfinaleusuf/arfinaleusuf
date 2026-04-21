@@ -28,3 +28,10 @@
 <p>
   <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,python,pycharm" />
 </p>
+
+### 🛠️ Skills
+
+#### 🎨 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,c,c++,python" />
+</p>
