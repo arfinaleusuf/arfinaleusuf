@@ -28,7 +28,7 @@
 
 ### 🌐 Connect with Me
 <p>
-  <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=mail" /></a>
+  <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=Gmail-Dark" /></a>
   <a href="https://github.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=github" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
