@@ -31,10 +31,11 @@
 
 ### 🛠️ Skills
 
-#### 🎨 Frontend
+#### 🎨 web devolpment
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,c,cpp,python" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
+### programming language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
