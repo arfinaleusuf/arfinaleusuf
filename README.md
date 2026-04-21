@@ -35,7 +35,7 @@
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
-### programming language
+#### 🎨 programming language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
