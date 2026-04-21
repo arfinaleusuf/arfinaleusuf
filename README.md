@@ -30,7 +30,7 @@
 <p>
   <a href="https://github.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=github" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-  <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=x" /></a>
+  <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=X" /></a>
 </p>
 
   
