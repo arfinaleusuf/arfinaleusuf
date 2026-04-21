@@ -33,5 +33,8 @@
 
 #### 🎨 Frontend
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,c,c++,python" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,c,cpp,python" />
+</p>
+<p>
+  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
