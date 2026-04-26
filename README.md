@@ -32,15 +32,12 @@
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
-## 📫 Contact
-- Email: arfinaleusuf@gmail.com
-
 
 ### 🌐 Connect With Me
 <p>
+  <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
   <a href="https://github.com/arfinaleusuf"><img src="https://skillicons.dev/icons?i=github" /></a>
-  <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.instagram.com/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=instagram" /></a>
   <a href="https://discord.com/users/1339686978857209926"><img src="https://skillicons.dev/icons?i=discord" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
