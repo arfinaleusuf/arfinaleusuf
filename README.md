@@ -14,6 +14,10 @@
 ## 📊 GitHub Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
 
+https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true
+
+https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
 
 ### 🛠️ Skills
