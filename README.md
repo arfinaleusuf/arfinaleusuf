@@ -12,17 +12,25 @@
 - Software Development
 
 ### 🛠️ Skills
+## 📊 GitHub Stats
+![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
 
 🎨 Programming Language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
 
+#### 🎨 Web Devolpment Skill
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
+</p>
 
-## 📊 GitHub Stats
-![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
+#### 🧰 Tools & Platform
+<p>
+  <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
+</p>
 
 ## 📫 Contact
 - Email: arfinaleusuf@gmail.com
@@ -38,12 +46,3 @@
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
 </p>
 
-#### 🧰 Tools & Platform
-<p>
-  <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
-</p>
-
-#### 🎨 Web Devolpment Skill
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
-</p>
