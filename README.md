@@ -22,19 +22,19 @@
 </p>
 
 <br>
-### 🎨 Web Devolpment Skill
+#### 🎨 Web Development
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
 
 <br>
-### 🧰 Tools & Platform 
+#### 🧰 Tools & Platform 
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
 <br>
-### 🌐 Connect With Me
+### 🌐 Connect with Me
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
