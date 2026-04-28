@@ -5,14 +5,15 @@
 </p
 
 
-<b>Competitive Programmer   ||   Learning Data Structures & Algorithms   ||   Passionate about software devolopment</b>
+<b>Competitive Programmer || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
 
 
 ## 📊 GitHub Stats
+<section class="flex">
 ![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
-
+</section>
 ### 🛠️ Skills
 🎨 Programming Language
 <p>
