@@ -7,33 +7,34 @@
 
 <b>Competitive Programmer || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
 
-
+<br>
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="60%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default" width="40%" />
 </p>
 
-
-🛠️ Skills
-🎨 Programming Language
+<br>
+Programming Language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
 
-#### 🎨 Web Devolpment Skill
+<br>
+<b> Web Devolpment Skill </b>
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
 
-#### 🧰 Tools & Platform
+<br>
+🧰 <b> Tools & Platform </b>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
-
-### 🌐 Connect With Me
+<br>
+### 🌐 <b> Connect With Me </b>
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
