@@ -22,19 +22,25 @@
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
+
 ---
+
 <br>
 <h3 align="left">💻 <b>Web Development</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
+
 ---
+
 <br>
 <h3 align="left">💻 <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
+
 ---
+
 <br>
 <h3 align="left">💻 <b>Connect with Me</b></h3>
 <p>
@@ -45,4 +51,6 @@
   <a href="https://discord.com/users/1339686978857209926"><img src="https://skillicons.dev/icons?i=discord" /></a>
   <a href="https://x.com/ArfinAlEusuf"><img src="https://skillicons.dev/icons?i=twitter" /></a>
 </p>
+
 ---
+
