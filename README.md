@@ -4,7 +4,7 @@
 📚 Learning Data Structures & Algorithms  
 🚀 Passionate about Problem Solving  
 <p align="center">
- <img src="(https://github.com/arfinaleusuf/arfinaleusuf/blob/main/image/profile%20banner.png)" width="100%" />
+ <img src="https://github.com/arfinaleusuf/arfinaleusuf/blob/main/image/profile%20banner.png" width="100%" />
 </p
 
 ## 📊 GitHub Stats
