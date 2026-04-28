@@ -5,7 +5,7 @@
 </p
 
 
-<b>Competitive Programmer                   Learning Data Structures & Algorithms                 Passionate about Problem Solving</b>
+<b>Competitive Programmer   ||   Learning Data Structures & Algorithms   ||   Passionate about software devolopment</b>
 
 
 ## 📊 GitHub Stats
