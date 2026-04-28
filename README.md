@@ -1,11 +1,12 @@
 # Hi, I'm Arfin Al Eusuf 👋
 
-💻 Competitive Programmer  
-📚 Learning Data Structures & Algorithms  
-🚀 Passionate about Problem Solving  
 <p align="center">
  <img src="https://github.com/arfinaleusuf/arfinaleusuf/blob/main/image/profile%20banner.png" width="100%" />
 </p
+
+
+<b>Competitive Programmer                   Learning Data Structures & Algorithms                 Passionate about Problem Solving</b>
+
 
 ## 📊 GitHub Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
