@@ -8,7 +8,7 @@
 <b>Competitive Programmer || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
 
 <br>
-### 📊 GitHub Stats
+### 📊 **GitHub Stats**
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="50%" />
@@ -16,25 +16,25 @@
 </p>
 
 <br>
-### 💻 Programming Language
+### 💻 **Programming Language**
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
 
 <br>
-#### 🎨 Web Development
+### 🎨 **Web Development**
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
 
 <br>
-#### 🧰 Tools & Platform 
+### 🧰 **Tools & Platform**
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
 <br>
-### 🌐 Connect with Me
+### 🌐 **Connect with Me**
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
