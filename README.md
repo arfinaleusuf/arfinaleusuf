@@ -9,12 +9,11 @@
 
 
 ## 📊 GitHub Stats
-<section class="flex">
-![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
-</section>
-### 🛠️ Skills
+![Stats](https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default)   ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default)
+
+
+🛠️ Skills
 🎨 Programming Language
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
