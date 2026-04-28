@@ -10,14 +10,14 @@
 
 ---
 
-<br>
 <h3 align="left">📊 <b>GitHub Stats</b></h3>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="50%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default" width="50%" />
 </p>
+
 ---
-<br>
+
 <h3 align="left">💻 <b>Programming Language</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
@@ -25,7 +25,6 @@
 
 ---
 
-<br>
 <h3 align="left">💻 <b>Web Development</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
@@ -33,7 +32,6 @@
 
 ---
 
-<br>
 <h3 align="left">💻 <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
@@ -41,7 +39,6 @@
 
 ---
 
-<br>
 <h3 align="left">💻 <b>Connect with Me</b></h3>
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
