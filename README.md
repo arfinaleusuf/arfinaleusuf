@@ -16,25 +16,25 @@
 </p>
 
 <br>
-### 💻 **Programming Language**
+<h3 align="center">💻 <b>Programming Language</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
 
 <br>
-### 🎨 **Web Development**
+<h3 align="center">💻 <b>Web Development</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
 
 <br>
-### 🧰 **Tools & Platform**
+<h3 align="center">💻 <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
 <br>
-### 🌐 **Connect with Me**
+<h3 align="center">💻 <b>Connect with Me</b></h3>
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
