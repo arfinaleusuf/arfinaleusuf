@@ -25,21 +25,21 @@
 
 ---
 
-<h3 align="left">💻 <b>Web Development</b></h3>
+<h3 align="left">🌐 <b>Web Development</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
 </p>
 
 ---
 
-<h3 align="left">💻 <b>Tools & Platform</b></h3>
+<h3 align="left">🛠️ <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
 </p>
 
 ---
 
-<h3 align="left">💻 <b>Connect with Me</b></h3>
+<h3 align="left">📬 <b>Connect with Me</b></h3>
 <p>
   <a href="mailto:arfinaleusuf@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
   <a href="https://www.linkedin.com/in/arfinaleusuf/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
