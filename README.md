@@ -9,11 +9,11 @@
 <b>Competitive Programmer || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
 
 ---
-
+<img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="50%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default" width="50%" />
 <h3 align="left">📊 <b>GitHub Stats</b></h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arfinaleusuf&show_icons=true&theme=default" width="50%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arfinaleusuf&layout=compact&theme=default" width="50%" />
+  
 </p>
 
 ---
