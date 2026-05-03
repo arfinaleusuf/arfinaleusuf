@@ -6,7 +6,7 @@
 
 ---
 
-<b>Competitive Programmer || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
+<b>Competitive Programmer || CSE Student || Learning Data Structures & Algorithms || Passionate about software devolopment</b>
 
 ---
 
