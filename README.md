@@ -24,6 +24,13 @@
 
 ---
 
+<h3 align="left">🗄️ <b>Database</b></h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" />
+</p>
+
+---
+
 <h3 align="left">🛠️ <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
