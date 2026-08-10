@@ -26,7 +26,7 @@
 
 <h3 align="left">🗄️ <b>Database</b></h3>
 <p>
-  <img src="https://skillicons.dev/icons?i=mysql" />
+  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres" />
 </p>
 
 ---
