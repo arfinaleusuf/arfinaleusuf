@@ -31,6 +31,13 @@
 
 ---
 
+<h3 align="left">🔗 <b>API</b></h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=fastapi,postman" />
+</p>
+
+---
+
 <h3 align="left">🛠️ <b>Tools & Platform</b></h3>
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git,github,python,pycharm,vercel" />
