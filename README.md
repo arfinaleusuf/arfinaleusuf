@@ -24,16 +24,16 @@
 
 ---
 
-<h3 align="left">🗄️ <b>Database</b></h3>
+<h3 align="left">🔗 <b>API</b></h3>
 <p>
-  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres" />
+  <img src="https://skillicons.dev/icons?i=fastapi,postman" />
 </p>
 
 ---
 
-<h3 align="left">🔗 <b>API</b></h3>
+<h3 align="left">🗄️ <b>Database</b></h3>
 <p>
-  <img src="https://skillicons.dev/icons?i=fastapi,postman" />
+  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres" />
 </p>
 
 ---
