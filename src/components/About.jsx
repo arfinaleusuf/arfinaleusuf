@@ -2,16 +2,14 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Code2,
-  Terminal,
   Brain,
   Cpu,
   Check,
   Copy,
   Layers,
-  GraduationCap,
 } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
-import { personalInfo, terminalCodeSnippet } from '../data/portfolioData';
+import { terminalCodeSnippet } from '../data/portfolioData';
 
 export default function About() {
   const [copied, setCopied] = useState(false);
@@ -25,43 +23,43 @@ export default function About() {
   const corePillars = [
     {
       icon: Brain,
-      title: 'Algorithmic Problem Solving',
+      title: 'Algorithmic Precision',
       description:
-        'Dissecting complex problems with mathematical rigor, optimizing time and space complexities, and competing in algorithmic contests.',
-      color: 'text-cyan-400',
+        'Rigorous problem solving in C++, analyzing asymptotic bounds, and competing in rated algorithmic rounds.',
+      color: 'text-cyan-600 dark:text-cyan-400',
       border: 'border-cyan-500/20',
       bg: 'bg-cyan-500/5',
     },
     {
       icon: Cpu,
-      title: 'Computer Science Core',
+      title: 'Systems & Fundamentals',
       description:
-        'Solid grounding in Data Structures, Algorithms, Object-Oriented Programming, and Database Systems.',
-      color: 'text-indigo-400',
+        'Solid grounding in Data Structures, Algorithms, Object-Oriented design, and relational database systems.',
+      color: 'text-indigo-600 dark:text-indigo-400',
       border: 'border-indigo-500/20',
       bg: 'bg-indigo-500/5',
     },
     {
       icon: Layers,
-      title: 'Full-Stack Software Craft',
+      title: 'Software Engineering',
       description:
-        'Building responsive, accessible web interfaces with React and Tailwind while understanding low-level C++ & backend architectures.',
-      color: 'text-emerald-400',
+        'Building responsive, accessible interfaces with clean component architectures and modern tooling.',
+      color: 'text-emerald-600 dark:text-emerald-400',
       border: 'border-emerald-500/20',
       bg: 'bg-emerald-500/5',
     },
   ];
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden">
+    <section id="about" className="section-padding bg-slate-100/40 dark:bg-slate-950/40 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="ABOUT ME"
-          title="Engineering Mindset & Passion"
-          subtitle="Computer Science student striving for problem-solving elegance and robust software architecture."
+          tag="ABOUT"
+          title="Engineering Mindset"
+          subtitle="Focused on algorithmic rigor, systems thinking, and clean software design."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -74,21 +72,21 @@ export default function About() {
               transition={{ duration: 0.5 }}
               className="space-y-4"
             >
-              <h3 className="text-2xl font-bold text-white flex items-center gap-3">
-                <Code2 className="w-6 h-6 text-indigo-400" />
-                <span>Who I Am</span>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                <Code2 className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+                <span>Background & Philosophy</span>
               </h3>
 
-              <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-                I am a passionate <strong className="text-white font-semibold">Computer Science & Engineering student</strong> based in Bangladesh with a deep-rooted drive for competitive programming, algorithms, and systems engineering.
+              <p className="text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+                I'm a <strong className="text-slate-900 dark:text-white font-semibold">Computer Science & Engineering student</strong> dedicated to competitive programming, algorithmic complexity, and clean software architecture.
               </p>
 
-              <p className="text-slate-400 text-base leading-relaxed font-light">
-                What began as curiosity with C and simple logic blossomed into a dedicated daily pursuit of competitive programming on platforms like Codeforces and LeetCode. I love the thrill of writing fast, clean code that reduces an <code className="font-mono text-xs text-indigo-300 bg-indigo-950/60 px-1.5 py-0.5 rounded">O(N²)</code> brute force into an optimal <code className="font-mono text-xs text-cyan-300 bg-cyan-950/60 px-1.5 py-0.5 rounded">O(N log N)</code> solution.
+              <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+                My daily work centers on competitive problem solving in C++ across Codeforces and LeetCode—focusing on graph algorithms, dynamic programming, and data structures. I look for optimal time and space trade-offs, turning brute-force approaches into lean <code className="font-mono text-xs text-indigo-600 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/60 border border-indigo-200/60 dark:border-cyan-900/50 px-1.5 py-0.5 rounded">O(N log N)</code> solutions.
               </p>
 
-              <p className="text-slate-400 text-base leading-relaxed font-light">
-                Beyond competitive programming, I build modern web applications, combining engineering principles with thoughtful UI/UX design. My goal is to build impactful, scalable software that solves real-world challenges.
+              <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+                Alongside algorithmic training, I build modern web applications using React, Tailwind, and Python/FastAPI, emphasizing minimalist design, accessibility, and robust API design.
               </p>
             </motion.div>
 
@@ -103,17 +101,17 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: '-40px' }}
                     transition={{ duration: 0.4, delay: idx * 0.1 }}
-                    className={`p-5 rounded-2xl ${pillar.bg} border ${pillar.border} backdrop-blur-sm transition-all hover:border-slate-700`}
+                    className={`p-5 rounded-2xl bg-white/90 dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800 shadow-xs dark:shadow-none backdrop-blur-sm transition-all hover:border-indigo-500/40`}
                   >
                     <div className="flex items-start gap-4">
-                      <div className={`p-3 rounded-xl bg-slate-900 ${pillar.color} shadow-inner`}>
+                      <div className={`p-3 rounded-xl bg-slate-100 dark:bg-slate-900 ${pillar.color} shadow-inner`}>
                         <Icon className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="text-base font-bold text-white mb-1">
+                        <h4 className="text-base font-bold text-slate-900 dark:text-white mb-1">
                           {pillar.title}
                         </h4>
-                        <p className="text-sm text-slate-400 leading-relaxed font-light">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-light">
                           {pillar.description}
                         </p>
                       </div>
@@ -132,9 +130,9 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-6"
           >
-            <div className="rounded-2xl bg-slate-950/90 border border-slate-800 shadow-2xl overflow-hidden">
+            <div className="rounded-2xl bg-slate-950 border border-slate-800 shadow-2xl overflow-hidden">
               {/* Terminal Title Bar */}
-              <div className="px-4 py-3 bg-slate-900/80 border-b border-slate-800 flex items-center justify-between">
+              <div className="px-4 py-3 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -146,7 +144,7 @@ export default function About() {
 
                 <button
                   onClick={handleCopyCode}
-                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white font-mono text-xs transition-colors"
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white font-mono text-xs transition-colors cursor-pointer"
                   title="Copy code"
                 >
                   {copied ? (
@@ -164,14 +162,14 @@ export default function About() {
               </div>
 
               {/* Terminal Code Display */}
-              <div className="p-5 font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto leading-relaxed bg-[#030712]/95 selection:bg-indigo-600">
+              <div className="p-5 font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto leading-relaxed bg-[#030712] selection:bg-indigo-600">
                 <pre>
                   <code>{terminalCodeSnippet}</code>
                 </pre>
               </div>
 
               {/* Terminal Status Footer */}
-              <div className="px-4 py-2.5 bg-slate-900/60 border-t border-slate-800/80 flex items-center justify-between font-mono text-xs text-slate-400">
+              <div className="px-4 py-2.5 bg-slate-900/70 border-t border-slate-800/80 flex items-center justify-between font-mono text-xs text-slate-400">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-400" />
                   <span>Compilation: Success (g++ -O3)</span>

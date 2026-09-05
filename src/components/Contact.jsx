@@ -1,16 +1,12 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Mail,
   Send,
   Check,
   Copy,
-  Github,
-  Linkedin,
   Clock,
-  Sparkles,
   AlertCircle,
-  MessageSquare,
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import SectionHeading from './ui/SectionHeading';
@@ -85,12 +81,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-slate-950/80 relative">
+    <section id="contact" className="section-padding bg-slate-100/50 dark:bg-slate-950/80 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="GET IN TOUCH"
-          title="Let's Build & Solve Together"
-          subtitle="Whether you have an opportunity, a technical question, or an algorithmic challenge to discuss, feel free to reach out."
+          tag="CONTACT"
+          title="Get In Touch"
+          subtitle="Open for internships, engineering opportunities, and technical discussions."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -98,21 +94,21 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-6">
             <div className="glass-card rounded-2xl p-6 sm:p-8 space-y-6">
               <div>
-                <span className="font-mono text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-1">
+                <span className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
                   Direct Channel
                 </span>
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Contact Information
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                  Let's Connect
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
-                  I check messages regularly and welcome conversations regarding competitive programming, software engineering, and collaborative projects.
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  Have an engineering opportunity or an interesting problem to solve? Send an email or reach out through my profiles.
                 </p>
               </div>
 
               {/* Email Card with Copy Button */}
-              <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between gap-3">
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 shadow-xs">
                 <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div className="truncate">
@@ -121,7 +117,7 @@ export default function Contact() {
                     </span>
                     <a
                       href={`mailto:${personalInfo.email}`}
-                      className="font-mono text-xs sm:text-sm text-slate-200 hover:text-cyan-400 transition-colors truncate block"
+                      className="font-mono text-xs sm:text-sm text-slate-800 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors truncate block"
                     >
                       {personalInfo.email}
                     </a>
@@ -130,12 +126,12 @@ export default function Contact() {
 
                 <button
                   onClick={handleCopyEmail}
-                  className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors cursor-pointer shrink-0"
+                  className="p-2 rounded-lg bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer shrink-0 shadow-xs"
                   title="Copy email address"
                   aria-label="Copy email"
                 >
                   {emailCopied ? (
-                    <Check className="w-4 h-4 text-emerald-400" />
+                    <Check className="w-4 h-4 text-emerald-500" />
                   ) : (
                     <Copy className="w-4 h-4" />
                   )}
@@ -143,14 +139,14 @@ export default function Contact() {
               </div>
 
               {/* Response Time Indicator */}
-              <div className="flex items-center gap-3 text-xs font-mono text-slate-400 bg-slate-900/40 p-3 rounded-xl border border-slate-800/80">
-                <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
+              <div className="flex items-center gap-3 text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/80">
+                <Clock className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0" />
                 <span>Typical response time: Within 24 hours</span>
               </div>
 
               {/* Social Channels List */}
               <div className="space-y-3 pt-2">
-                <span className="font-mono text-xs font-semibold text-slate-400 uppercase tracking-wider block">
+                <span className="font-mono text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
                   Find Me Online
                 </span>
 
@@ -161,9 +157,9 @@ export default function Contact() {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-indigo-500/40 transition-all flex items-center gap-2 text-xs font-mono text-slate-300 hover:text-white group"
+                      className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 hover:bg-slate-100 dark:hover:bg-slate-800/80 border border-slate-200 dark:border-slate-800 hover:border-indigo-500/40 transition-all flex items-center gap-2 text-xs font-mono text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white group"
                     >
-                      <span className="text-cyan-400 group-hover:translate-x-0.5 transition-transform">
+                      <span className="text-cyan-600 dark:text-cyan-400 group-hover:translate-x-0.5 transition-transform">
                         ▹
                       </span>
                       <span>{social.name}</span>
@@ -183,21 +179,21 @@ export default function Contact() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="py-12 text-center space-y-4"
                 >
-                  <div className="w-16 h-16 mx-auto rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shadow-lg shadow-emerald-500/10">
+                  <div className="w-16 h-16 mx-auto rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-lg shadow-emerald-500/10">
                     <Check className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                     Message Sent Successfully!
                   </h3>
-                  <p className="text-slate-400 text-sm max-w-md mx-auto leading-relaxed">
-                    Thank you for reaching out, <strong className="text-white">{formData.name}</strong>. I've received your note and will get back to you promptly.
+                  <p className="text-slate-600 dark:text-slate-400 text-sm max-w-md mx-auto leading-relaxed">
+                    Thank you for reaching out, <strong className="text-slate-900 dark:text-white">{formData.name}</strong>. I've received your note and will get back to you promptly.
                   </p>
                   <button
                     onClick={() => {
                       setIsSubmitted(false);
                       setFormData({ name: '', email: '', subject: '', message: '' });
                     }}
-                    className="px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 text-xs font-mono transition-colors cursor-pointer"
+                    className="px-6 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-300 dark:border-slate-700 text-xs font-mono transition-colors cursor-pointer"
                   >
                     Send Another Message
                   </button>
@@ -207,8 +203,8 @@ export default function Contact() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {/* Name Input */}
                     <div>
-                      <label className="block text-xs font-mono font-medium text-slate-300 mb-1.5">
-                        Your Name <span className="text-indigo-400">*</span>
+                      <label className="block text-xs font-mono font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                        Your Name <span className="text-indigo-600 dark:text-indigo-400">*</span>
                       </label>
                       <input
                         type="text"
@@ -216,14 +212,14 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="e.g. Alex Morgan"
-                        className={`w-full px-4 py-3 bg-slate-900/90 border rounded-xl text-white text-sm font-sans placeholder-slate-500 focus:outline-none transition-colors ${
+                        className={`w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/90 border rounded-xl text-slate-900 dark:text-white text-sm font-sans placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none transition-colors shadow-xs ${
                           errors.name
                             ? 'border-red-500/70 focus:border-red-500'
-                            : 'border-slate-800 focus:border-indigo-500'
+                            : 'border-slate-300 dark:border-slate-800 focus:border-indigo-500'
                         }`}
                       />
                       {errors.name && (
-                        <p className="text-xs text-red-400 font-mono mt-1 flex items-center gap-1">
+                        <p className="text-xs text-red-500 dark:text-red-400 font-mono mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3.5 h-3.5" />
                           <span>{errors.name}</span>
                         </p>
@@ -232,8 +228,8 @@ export default function Contact() {
 
                     {/* Email Input */}
                     <div>
-                      <label className="block text-xs font-mono font-medium text-slate-300 mb-1.5">
-                        Your Email <span className="text-indigo-400">*</span>
+                      <label className="block text-xs font-mono font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                        Your Email <span className="text-indigo-600 dark:text-indigo-400">*</span>
                       </label>
                       <input
                         type="email"
@@ -241,14 +237,14 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="e.g. alex@example.com"
-                        className={`w-full px-4 py-3 bg-slate-900/90 border rounded-xl text-white text-sm font-sans placeholder-slate-500 focus:outline-none transition-colors ${
+                        className={`w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/90 border rounded-xl text-slate-900 dark:text-white text-sm font-sans placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none transition-colors shadow-xs ${
                           errors.email
                             ? 'border-red-500/70 focus:border-red-500'
-                            : 'border-slate-800 focus:border-indigo-500'
+                            : 'border-slate-300 dark:border-slate-800 focus:border-indigo-500'
                         }`}
                       />
                       {errors.email && (
-                        <p className="text-xs text-red-400 font-mono mt-1 flex items-center gap-1">
+                        <p className="text-xs text-red-500 dark:text-red-400 font-mono mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3.5 h-3.5" />
                           <span>{errors.email}</span>
                         </p>
@@ -258,8 +254,8 @@ export default function Contact() {
 
                   {/* Subject Input */}
                   <div>
-                    <label className="block text-xs font-mono font-medium text-slate-300 mb-1.5">
-                      Subject <span className="text-indigo-400">*</span>
+                    <label className="block text-xs font-mono font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                      Subject <span className="text-indigo-600 dark:text-indigo-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -267,14 +263,14 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       placeholder="e.g. Collaboration on Algorithmic Project"
-                      className={`w-full px-4 py-3 bg-slate-900/90 border rounded-xl text-white text-sm font-sans placeholder-slate-500 focus:outline-none transition-colors ${
+                      className={`w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/90 border rounded-xl text-slate-900 dark:text-white text-sm font-sans placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none transition-colors shadow-xs ${
                         errors.subject
                           ? 'border-red-500/70 focus:border-red-500'
-                          : 'border-slate-800 focus:border-indigo-500'
+                          : 'border-slate-300 dark:border-slate-800 focus:border-indigo-500'
                       }`}
                     />
                     {errors.subject && (
-                      <p className="text-xs text-red-400 font-mono mt-1 flex items-center gap-1">
+                      <p className="text-xs text-red-500 dark:text-red-400 font-mono mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3.5 h-3.5" />
                         <span>{errors.subject}</span>
                       </p>
@@ -283,8 +279,8 @@ export default function Contact() {
 
                   {/* Message Input */}
                   <div>
-                    <label className="block text-xs font-mono font-medium text-slate-300 mb-1.5">
-                      Message <span className="text-indigo-400">*</span>
+                    <label className="block text-xs font-mono font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                      Message <span className="text-indigo-600 dark:text-indigo-400">*</span>
                     </label>
                     <textarea
                       name="message"
@@ -292,14 +288,14 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Write your message or inquiry here..."
-                      className={`w-full px-4 py-3 bg-slate-900/90 border rounded-xl text-white text-sm font-sans placeholder-slate-500 focus:outline-none transition-colors resize-none ${
+                      className={`w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/90 border rounded-xl text-slate-900 dark:text-white text-sm font-sans placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none transition-colors resize-none shadow-xs ${
                         errors.message
                           ? 'border-red-500/70 focus:border-red-500'
-                          : 'border-slate-800 focus:border-indigo-500'
+                          : 'border-slate-300 dark:border-slate-800 focus:border-indigo-500'
                       }`}
                     />
                     {errors.message && (
-                      <p className="text-xs text-red-400 font-mono mt-1 flex items-center gap-1">
+                      <p className="text-xs text-red-500 dark:text-red-400 font-mono mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3.5 h-3.5" />
                         <span>{errors.message}</span>
                       </p>

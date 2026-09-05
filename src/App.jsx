@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,11 +10,11 @@ import CompetitiveProgramming from './components/CompetitiveProgramming';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
-import GithubActivity from './components/GithubActivity';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PWAInstallPrompt from './components/ui/PWAInstallPrompt';
 
-export default function App() {
+function PortfolioContent() {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-300 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#030712] text-slate-800 dark:text-slate-300 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden transition-colors duration-300">
       {/* Global Navigation */}
       <Navbar />
 
@@ -43,7 +44,6 @@ export default function App() {
         <Projects />
         <Education />
         <Achievements />
-        <GithubActivity />
         <Contact />
       </main>
 
@@ -66,6 +66,16 @@ export default function App() {
           </motion.button>
         )}
       </AnimatePresence>
+      {/* PWA App Install Banner */}
+      <PWAInstallPrompt />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <PortfolioContent />
+    </ThemeProvider>
   );
 }

@@ -1,4 +1,4 @@
-import { Code2, Heart, ArrowUp } from 'lucide-react';
+import { Code2, ArrowUp } from 'lucide-react';
 import { personalInfo, navLinks } from '../data/portfolioData';
 
 export default function Footer() {
@@ -9,42 +9,42 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#02050e] border-t border-slate-900 pt-16 pb-12 relative">
+    <footer className="bg-slate-100 dark:bg-[#02050e] border-t border-slate-200 dark:border-slate-900 pt-16 pb-12 relative transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-900 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-200 dark:border-slate-900 items-start">
           {/* Brand Info */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-cyan-400">
+              <div className="w-8 h-8 rounded-lg bg-indigo-600/15 dark:bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-600 dark:text-cyan-400">
                 <Code2 className="w-4 h-4" />
               </div>
-              <span className="font-mono text-lg font-bold text-white tracking-tight">
+              <span className="font-mono text-lg font-bold text-slate-900 dark:text-white tracking-tight">
                 {personalInfo.preferredName}
-                <span className="text-cyan-400">.dev</span>
+                <span className="text-cyan-600 dark:text-cyan-400">.dev</span>
               </span>
             </div>
 
-            <p className="text-slate-400 text-sm max-w-md leading-relaxed font-light">
-              Competitive Programmer & Computer Science student engineering clean algorithms and responsive digital experiences.
+            <p className="text-slate-600 dark:text-slate-400 text-sm max-w-md leading-relaxed">
+              Competitive programmer and computer science student building clean algorithms and performant software.
             </p>
 
-            <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 bg-emerald-500/5 border border-emerald-500/20 px-3 py-1 rounded-full w-fit">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 pulse-dot" />
+            <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 dark:bg-emerald-500/5 border border-emerald-500/25 dark:border-emerald-500/20 px-3 py-1 rounded-full w-fit">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400 pulse-dot" />
               <span>{personalInfo.statusText}</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-6 flex flex-col md:items-end space-y-4">
-            <span className="font-mono text-xs font-semibold text-slate-400 uppercase tracking-wider">
+            <span className="font-mono text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
               Quick Navigation
             </span>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400 md:justify-end">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600 dark:text-slate-400 md:justify-end">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-indigo-600 dark:hover:text-white transition-colors"
                 >
                   {link.label}
                 </a>
@@ -61,14 +61,14 @@ export default function Footer() {
 
           <div className="flex items-center gap-1">
             <span>Crafted with</span>
-            <span className="text-indigo-400">React</span>,
-            <span className="text-cyan-400">Three.js</span> &
-            <span className="text-emerald-400">Tailwind</span>
+            <span className="text-indigo-600 dark:text-indigo-400">React</span>,
+            <span className="text-cyan-600 dark:text-cyan-400">Three.js</span> &
+            <span className="text-emerald-600 dark:text-emerald-400">Tailwind</span>
           </div>
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-slate-400 hover:text-white transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
           >
             <span>Back to top</span>
             <ArrowUp className="w-3.5 h-3.5" />

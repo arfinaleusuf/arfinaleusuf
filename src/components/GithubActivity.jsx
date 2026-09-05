@@ -42,9 +42,9 @@ export default function GithubActivity() {
     <section id="activity" className="section-padding relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="DEVELOPER ACTIVITY"
-          title="GitHub & Coding Cadence"
-          subtitle="Continuous commits, problem solutions, and software repositories reflecting daily coding consistency."
+          tag="ACTIVITY"
+          title="Developer Activity"
+          subtitle="Commit consistency, repository highlights, and language metrics."
         />
 
         {/* GitHub Metrics Banner */}
@@ -100,7 +100,10 @@ export default function GithubActivity() {
 
             {/* Matrix Scroll Container */}
             <div className="overflow-x-auto pb-2">
-              <div className="inline-grid grid-rows-7 grid-flow-col gap-1.5 min-w-[700px]">
+              <div className="text-[11px] font-mono text-cyan-400/80 sm:hidden block mb-2">
+                ← Swipe horizontally to explore commit history →
+              </div>
+              <div className="inline-grid grid-rows-7 grid-flow-col gap-1.5 min-w-[660px]">
                 {Array.from({ length: weeks }).map((_, w) =>
                   Array.from({ length: days }).map((_, d) => {
                     const level = getCommitLevel(w, d);

@@ -2,9 +2,7 @@ import { motion } from 'framer-motion';
 import {
   Trophy,
   ExternalLink,
-  Flame,
   Binary,
-  Code2,
   CheckCircle2,
 } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
@@ -21,8 +19,8 @@ export default function CompetitiveProgramming() {
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           tag="COMPETITIVE PROGRAMMING"
-          title="Algorithmic Problem Solving"
-          subtitle="Tackling competitive programming challenges, optimizing complexities, and competing on global coding platforms."
+          title="Problem Solving"
+          subtitle="Solving algorithmic problems, analyzing asymptotic bounds, and competing in rated rounds."
         />
 
         {/* Animated Key Statistics Counters */}
@@ -38,14 +36,14 @@ export default function CompetitiveProgramming() {
             >
               <div className="absolute -right-6 -bottom-6 w-20 h-20 bg-emerald-500/5 rounded-full blur-xl group-hover:bg-emerald-500/15 transition-colors" />
 
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-2 flex items-center justify-center gap-1">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-2 flex items-center justify-center gap-1">
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
 
-              <h4 className="text-sm font-bold text-slate-200 mb-1">
+              <h4 className="text-sm font-bold text-slate-800 dark:text-slate-200 mb-1">
                 {stat.label}
               </h4>
-              <p className="text-xs text-slate-400 font-light">
+              <p className="text-xs text-slate-600 dark:text-slate-400">
                 {stat.description}
               </p>
             </motion.div>
@@ -54,9 +52,9 @@ export default function CompetitiveProgramming() {
 
         {/* Platform Cards Showcase */}
         <div className="mb-16">
-          <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-            <Trophy className="w-5 h-5 text-amber-400" />
-            <span>Coding Profiles & Platforms</span>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <Trophy className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+            <span>Platform Profiles & Handles</span>
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -72,10 +70,10 @@ export default function CompetitiveProgramming() {
                 <div>
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-black text-white group-hover:text-cyan-400 transition-colors">
+                      <h4 className="text-xl font-black text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition-colors">
                         {platform.name}
                       </h4>
-                      <span className="font-mono text-xs text-slate-400">
+                      <span className="font-mono text-xs text-slate-500 dark:text-slate-400">
                         @{platform.handle}
                       </span>
                     </div>
@@ -87,27 +85,27 @@ export default function CompetitiveProgramming() {
                     </span>
                   </div>
 
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 font-light">
+                  <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 font-light">
                     {platform.tagline}
                   </p>
 
                   {/* Highlights Grid */}
-                  <div className="space-y-2 py-3 border-t border-b border-slate-800/80 mb-6 font-mono text-xs">
-                    <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">Peak / Status:</span>
-                      <span className="font-semibold text-white">
+                  <div className="space-y-2 py-3 border-t border-b border-slate-200 dark:border-slate-800/80 mb-6 font-mono text-xs">
+                    <div className="flex justify-between text-slate-700 dark:text-slate-300">
+                      <span className="text-slate-500 dark:text-slate-500">Peak / Status:</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">
                         {platform.rating}
                       </span>
                     </div>
-                    <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">Solved:</span>
-                      <span className="font-semibold text-emerald-400">
+                    <div className="flex justify-between text-slate-700 dark:text-slate-300">
+                      <span className="text-slate-500 dark:text-slate-500">Solved:</span>
+                      <span className="font-semibold text-emerald-600 dark:text-emerald-400">
                         {platform.solved}
                       </span>
                     </div>
-                    <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">Rounds:</span>
-                      <span className="font-semibold text-indigo-300">
+                    <div className="flex justify-between text-slate-700 dark:text-slate-300">
+                      <span className="text-slate-500 dark:text-slate-500">Rounds:</span>
+                      <span className="font-semibold text-indigo-600 dark:text-indigo-300">
                         {platform.contests}
                       </span>
                     </div>
@@ -118,7 +116,7 @@ export default function CompetitiveProgramming() {
                   href={platform.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/80 text-xs font-mono font-medium transition-all flex items-center justify-center gap-2 group-hover:border-indigo-500/40"
+                  className="w-full py-2.5 px-4 rounded-xl bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-300 dark:border-slate-700/80 text-xs font-mono font-medium transition-all flex items-center justify-center gap-2 group-hover:border-indigo-500/40"
                 >
                   <span>Visit Profile</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -132,15 +130,15 @@ export default function CompetitiveProgramming() {
         <div className="glass-card rounded-2xl p-6 sm:p-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
-              <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                <Binary className="w-5 h-5 text-cyan-400" />
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <Binary className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
                 <span>Key Algorithmic Strengths</span>
               </h3>
-              <p className="text-slate-400 text-xs sm:text-sm mt-1">
+              <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-1">
                 Frequently practiced problem classifications and core concepts.
               </p>
             </div>
-            <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-full w-fit">
+            <div className="flex items-center gap-2 text-xs font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-full w-fit">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>C++ STL & Fast I/O Verified</span>
             </div>
@@ -150,17 +148,17 @@ export default function CompetitiveProgramming() {
             {cpData.topics.map((topic, i) => (
               <div
                 key={i}
-                className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition-colors"
+                className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
               >
                 <div className="flex justify-between items-center mb-1.5">
-                  <h4 className="font-bold text-sm text-white">
+                  <h4 className="font-bold text-sm text-slate-900 dark:text-white">
                     {topic.name}
                   </h4>
-                  <span className="font-mono text-xs font-semibold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded">
+                  <span className="font-mono text-xs font-semibold text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/60 px-2 py-0.5 rounded">
                     {topic.solved} solved
                   </span>
                 </div>
-                <p className="font-mono text-xs text-slate-400 leading-relaxed">
+                <p className="font-mono text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                   {topic.algorithms}
                 </p>
               </div>

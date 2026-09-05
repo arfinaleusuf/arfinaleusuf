@@ -1,0 +1,83 @@
+{
+  "name": "Arfin Al Eusuf | Portfolio & Competitive Programmer",
+  "short_name": "Arfin.dev",
+  "description": "Portfolio of Arfin Al Eusuf - Competitive Programmer, CSE Student, and Software Developer.",
+  "theme_color": "#030712",
+  "background_color": "#030712",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": [
+    "education",
+    "developer",
+    "portfolio",
+    "productivity"
+  ],
+  "shortcuts": [
+    {
+      "name": "Competitive Programming",
+      "short_name": "CP",
+      "description": "View competitive programming stats and platforms",
+      "url": "/#cp",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Featured Projects",
+      "short_name": "Projects",
+      "description": "Explore algorithmic utilities and web projects",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact Arfin",
+      "short_name": "Contact",
+      "description": "Get in touch with Arfin",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

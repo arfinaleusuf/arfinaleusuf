@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Eye, Sparkles, Layers } from 'lucide-react';
+import { ExternalLink, Github, Eye, Sparkles } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import ProjectModal from './ui/ProjectModal';
 import { projectsData } from '../data/portfolioData';
@@ -17,12 +17,12 @@ export default function Projects() {
       : projectsData.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="projects" className="section-padding bg-slate-950/70 relative">
+    <section id="projects" className="section-padding bg-slate-100/50 dark:bg-slate-950/70 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="SHOWCASE"
-          title="Featured Engineering Projects"
-          subtitle="A selection of web applications, algorithmic tools, and software solutions built with performance and clean code."
+          tag="PROJECTS"
+          title="Featured Work"
+          subtitle="Software applications, algorithmic utilities, and responsive web systems."
         />
 
         {/* Category Filters */}
@@ -36,7 +36,7 @@ export default function Projects() {
                 className={`relative px-4 py-2 rounded-xl text-xs sm:text-sm font-mono font-medium transition-all duration-200 cursor-pointer ${
                   isActive
                     ? 'text-white font-semibold'
-                    : 'text-slate-400 hover:text-white bg-slate-900/60 border border-slate-800'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-xs'
                 }`}
               >
                 {isActive && (
@@ -66,7 +66,7 @@ export default function Projects() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.35, delay: idx * 0.05 }}
-                className="glass-card rounded-2xl overflow-hidden group flex flex-col h-full hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10"
+                className="glass-card rounded-2xl overflow-hidden group flex flex-col h-full hover:border-indigo-500/50 hover:shadow-xl dark:hover:shadow-2xl hover:shadow-indigo-500/10"
               >
                 {/* Project Image Preview */}
                 <div className="relative overflow-hidden h-56 bg-slate-950">
@@ -116,10 +116,10 @@ export default function Projects() {
                 {/* Card Content */}
                 <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-slate-400 text-xs sm:text-sm leading-relaxed line-clamp-3">
+                    <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed line-clamp-3">
                       {project.description}
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export default function Projects() {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[11px] font-mono text-indigo-300"
+                          className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-indigo-700 dark:text-indigo-300"
                         >
                           {tag}
                         </span>
@@ -138,10 +138,10 @@ export default function Projects() {
                     </div>
 
                     {/* Card Footer Links */}
-                    <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                    <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1 cursor-pointer"
+                        className="text-xs font-mono text-indigo-600 dark:text-cyan-400 hover:text-indigo-500 dark:hover:text-cyan-300 font-semibold flex items-center gap-1 cursor-pointer"
                       >
                         <span>View Project Breakdown</span>
                         <span>→</span>
@@ -153,7 +153,7 @@ export default function Projects() {
                             href={project.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-1.5 text-slate-400 hover:text-white transition-colors"
+                            className="p-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                             title="GitHub Repo"
                           >
                             <Github className="w-4 h-4" />
@@ -164,7 +164,7 @@ export default function Projects() {
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-1.5 text-slate-400 hover:text-indigo-400 transition-colors"
+                            className="p-1.5 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                             title="Live Demo"
                           >
                             <ExternalLink className="w-4 h-4" />

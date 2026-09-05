@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function AlgorithmCanvas() {
   const mountRef = useRef(null);
+  const { isDark } = useTheme();
+  const materialsRef = useRef({});
 
   useEffect(() => {
     const container = mountRef.current;
@@ -35,14 +38,14 @@ export default function AlgorithmCanvas() {
       color: 0x6366f1, // Indigo
       wireframe: true,
       transparent: true,
-      opacity: 0.25,
+      opacity: 0.28,
     });
     const icosahedronMesh = new THREE.Mesh(icosahedronGeo, wireframeMat);
     graphGroup.add(icosahedronMesh);
 
     // 2. Glowing Vertices (Graph Nodes)
     const positions = icosahedronGeo.attributes.position.array;
-    const nodeGeometry = new THREE.SphereGeometry(0.06, 8, 8);
+    const nodeGeometry = new THREE.SphereGeometry(0.065, 8, 8);
     const nodeMaterial = new THREE.MeshBasicMaterial({
       color: 0x06b6d4, // Cyan
     });
@@ -94,14 +97,21 @@ export default function AlgorithmCanvas() {
     );
 
     const particleMat = new THREE.PointsMaterial({
-      size: 0.05,
+      size: 0.055,
       color: 0x818cf8,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.85,
     });
 
     const particles = new THREE.Points(particleGeo, particleMat);
     graphGroup.add(particles);
+
+    materialsRef.current = {
+      wireframeMat,
+      nodeMaterial,
+      innerMat,
+      particleMat,
+    };
 
     // Mouse Interaction
     let mouseX = 0;
@@ -186,8 +196,32 @@ export default function AlgorithmCanvas() {
     };
   }, []);
 
+  // Update materials when dark/light theme changes
+  useEffect(() => {
+    const { wireframeMat, nodeMaterial, innerMat, particleMat } = materialsRef.current;
+    if (!wireframeMat) return;
+
+    if (isDark) {
+      wireframeMat.color.setHex(0x6366f1);
+      wireframeMat.opacity = 0.28;
+      nodeMaterial.color.setHex(0x06b6d4);
+      innerMat.color.setHex(0x10b981);
+      innerMat.opacity = 0.45;
+      particleMat.color.setHex(0x818cf8);
+      particleMat.opacity = 0.85;
+    } else {
+      wireframeMat.color.setHex(0x4f46e5);
+      wireframeMat.opacity = 0.55;
+      nodeMaterial.color.setHex(0x0891b2);
+      innerMat.color.setHex(0x059669);
+      innerMat.opacity = 0.65;
+      particleMat.color.setHex(0x6366f1);
+      particleMat.opacity = 0.9;
+    }
+  }, [isDark]);
+
   return (
-    <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[480px] flex items-center justify-center">
+    <div className="relative w-full h-[280px] sm:h-[400px] lg:h-[480px] flex items-center justify-center">
       {/* Three.js Canvas Container */}
       <div
         ref={mountRef}
@@ -195,12 +229,12 @@ export default function AlgorithmCanvas() {
       />
 
       {/* Decorative Overlays */}
-      <div className="absolute top-4 left-4 font-mono text-[11px] text-cyan-400/80 bg-slate-900/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-cyan-500/20 pointer-events-none">
-        <span className="inline-block w-2 h-2 rounded-full bg-cyan-400 mr-2 animate-pulse" />
+      <div className="absolute top-3 left-3 sm:top-4 sm:left-4 font-mono text-[10px] sm:text-[11px] text-cyan-700 dark:text-cyan-400 bg-white/90 dark:bg-slate-900/70 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg border border-cyan-500/30 dark:border-cyan-500/20 shadow-xs pointer-events-none">
+        <span className="inline-block w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-cyan-500 dark:bg-cyan-400 mr-1.5 animate-pulse" />
         DSA::Graph_Matrix (V=12, E=30)
       </div>
 
-      <div className="absolute bottom-4 right-4 font-mono text-[11px] text-indigo-400/80 bg-slate-900/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-indigo-500/20 pointer-events-none">
+      <div className="hidden sm:block absolute bottom-4 right-4 font-mono text-[11px] text-indigo-700 dark:text-indigo-400 bg-white/90 dark:bg-slate-900/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-indigo-500/30 dark:border-indigo-500/20 shadow-xs pointer-events-none">
         Time: O(V + E) | Space: O(V)
       </div>
     </div>

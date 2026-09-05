@@ -25,12 +25,12 @@ export default function Skills() {
       : skillsData.skills.filter((skill) => skill.category === activeCategory);
 
   return (
-    <section id="skills" className="section-padding bg-slate-950/60 relative">
+    <section id="skills" className="section-padding bg-slate-100/50 dark:bg-slate-950/60 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="TECH STACK & CORE"
-          title="Technical Capabilities"
-          subtitle="A comprehensive toolkit spanning low-level algorithms, computer science foundations, and modern web software engineering."
+          tag="SKILLS"
+          title="Technical Stack"
+          subtitle="Core computer science fundamentals, programming languages, and web engineering."
         />
 
         {/* Category Navigation Tabs */}
@@ -44,7 +44,7 @@ export default function Skills() {
                 className={`relative px-4 py-2 rounded-xl text-xs sm:text-sm font-mono font-medium transition-all duration-200 cursor-pointer ${
                   isActive
                     ? 'text-white font-semibold'
-                    : 'text-slate-400 hover:text-white bg-slate-900/60 border border-slate-800'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-xs'
                 }`}
               >
                 {isActive && (
@@ -82,11 +82,11 @@ export default function Skills() {
                     {/* Card Header */}
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 group-hover:text-indigo-400 transition-colors shadow-inner">
+                        <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-cyan-600 dark:text-cyan-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors shadow-inner">
                           <Icon className="w-5 h-5" />
                         </div>
                         <div>
-                          <h3 className="font-bold text-white text-lg group-hover:text-cyan-300 transition-colors">
+                          <h3 className="font-bold text-slate-900 dark:text-white text-lg group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors">
                             {skill.name}
                           </h3>
                           <span className="font-mono text-[11px] text-slate-500 uppercase tracking-wider">
@@ -96,43 +96,26 @@ export default function Skills() {
                       </div>
 
                       {/* Badge */}
-                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium text-indigo-300 bg-indigo-500/10 border border-indigo-500/20">
+                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium text-indigo-600 dark:text-indigo-300 bg-indigo-500/10 border border-indigo-500/20">
                         {skill.badge}
                       </span>
                     </div>
 
                     {/* Skill Description */}
-                    <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
                       {skill.description}
                     </p>
 
                     {/* Topic Chips */}
-                    <div className="flex flex-wrap gap-1.5 mb-6">
+                    <div className="flex flex-wrap gap-1.5 pt-1">
                       {skill.topics.map((topic) => (
                         <span
                           key={topic}
-                          className="px-2 py-0.5 rounded-md bg-slate-900/90 border border-slate-800 text-[11px] font-mono text-slate-400"
+                          className="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-slate-700 dark:text-slate-400 group-hover:border-slate-300 dark:group-hover:border-slate-700 transition-colors"
                         >
                           {topic}
                         </span>
                       ))}
-                    </div>
-                  </div>
-
-                  {/* Proficiency Meter */}
-                  <div>
-                    <div className="flex justify-between text-xs font-mono text-slate-400 mb-1.5">
-                      <span>Proficiency</span>
-                      <span className="text-white font-semibold">{skill.level}%</span>
-                    </div>
-                    <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden border border-slate-800">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        className="h-full bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full"
-                      />
                     </div>
                   </div>
                 </motion.div>

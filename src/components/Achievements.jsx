@@ -12,12 +12,12 @@ const iconMapping = {
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="section-padding bg-slate-950/60 relative">
+    <section id="achievements" className="section-padding bg-slate-100/50 dark:bg-slate-950/60 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="RECOGNITION"
-          title="Achievements & Honors"
-          subtitle="Milestones earned across competitive programming contests, academic journeys, and technical problem-solving."
+          tag="HONORS"
+          title="Achievements"
+          subtitle="Milestones across competitive programming, academics, and problem solving."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -39,11 +39,11 @@ export default function Achievements() {
                   {/* Card Header */}
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform shadow-inner">
+                      <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-amber-500 dark:text-amber-400 group-hover:scale-110 transition-transform shadow-inner">
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
-                        <span className="font-mono text-xs font-semibold text-cyan-400 uppercase tracking-wider block">
+                        <span className="font-mono text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider block">
                           {item.category}
                         </span>
                         <span className="font-mono text-xs text-slate-500 flex items-center gap-1 mt-0.5">
@@ -53,16 +53,16 @@ export default function Achievements() {
                       </div>
                     </div>
 
-                    <span className="px-3 py-1 rounded-full text-xs font-mono font-medium bg-slate-900 border border-slate-800 text-slate-300">
+                    <span className="px-3 py-1 rounded-full text-xs font-mono font-medium bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                       {item.issuer}
                     </span>
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors mb-2">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed font-light">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-light">
                     {item.description}
                   </p>
                 </div>

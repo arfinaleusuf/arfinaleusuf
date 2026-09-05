@@ -12,15 +12,15 @@ export default function SectionHeading({ tag, title, subtitle, align = 'center' 
         transition={{ duration: 0.5 }}
       >
         <div
-          className={`inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 mb-3 font-mono text-xs text-indigo-400 font-semibold tracking-wider uppercase ${
+          className={`inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 mb-3 font-mono text-xs text-indigo-600 dark:text-indigo-400 font-semibold tracking-wider uppercase ${
             isCenter ? 'mx-auto' : ''
           }`}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+          <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-400" />
           <span>// {tag}</span>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight mt-1 mb-4">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mt-1 mb-4">
           {title}
         </h2>
 
@@ -31,7 +31,7 @@ export default function SectionHeading({ tag, title, subtitle, align = 'center' 
         />
 
         {subtitle && (
-          <p className="text-slate-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         )}

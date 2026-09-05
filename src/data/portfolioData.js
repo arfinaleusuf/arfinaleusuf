@@ -68,7 +68,6 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Activity", href: "#activity" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -84,7 +83,6 @@ export const skillsData = {
     {
       name: "C++",
       category: "programming",
-      level: 90,
       badge: "Primary Language",
       description: "Modern C++20, STL algorithms, custom comparators, memory management, and competitive programming.",
       topics: ["STL Containers", "Templates", "Custom Comparators", "Bit Manipulation"],
@@ -92,7 +90,6 @@ export const skillsData = {
     {
       name: "C",
       category: "programming",
-      level: 85,
       badge: "Foundational",
       description: "Pointers, dynamic memory allocation (malloc/free), structs, and low-level computing.",
       topics: ["Pointers", "Dynamic Memory", "Structs", "Data Layout"],
@@ -100,7 +97,6 @@ export const skillsData = {
     {
       name: "Python",
       category: "programming",
-      level: 80,
       badge: "Scripting & DSA",
       description: "Algorithm prototyping, scripting, collections module, and backend API integration.",
       topics: ["List Comprehensions", "Collections", "OOP", "Algorithm Prototyping"],
@@ -108,7 +104,6 @@ export const skillsData = {
     {
       name: "JavaScript",
       category: "programming",
-      level: 85,
       badge: "Web Logic",
       description: "Modern ESNext, asynchronous architecture (Promises, async/await), closures, and DOM events.",
       topics: ["Async/Await", "Closures", "Event Loop", "ESNext"],
@@ -118,7 +113,6 @@ export const skillsData = {
     {
       name: "Data Structures",
       category: "cs",
-      level: 92,
       badge: "Core Strength",
       description: "Trees, graphs, heaps, segment trees, hash maps, and disjoint set union (DSU).",
       topics: ["Trees & Graphs", "Segment Trees", "DSU", "Heaps"],
@@ -126,7 +120,6 @@ export const skillsData = {
     {
       name: "Algorithms",
       category: "cs",
-      level: 88,
       badge: "Core Strength",
       description: "Dynamic programming, BFS/DFS, Dijkstra, binary search, greedy paradigms, and number theory.",
       topics: ["Dynamic Programming", "Graph Traversals", "Binary Search", "Greedy"],
@@ -134,7 +127,6 @@ export const skillsData = {
     {
       name: "Object-Oriented Programming",
       category: "cs",
-      level: 88,
       badge: "Architecture",
       description: "Encapsulation, inheritance, polymorphism, abstraction, and clean SOLID design principles.",
       topics: ["SOLID Principles", "Encapsulation", "Polymorphism", "Abstraction"],
@@ -142,7 +134,6 @@ export const skillsData = {
     {
       name: "Database Systems (DBMS)",
       category: "cs",
-      level: 80,
       badge: "Data Systems",
       description: "Relational schemas, normalization (1NF-3NF), indexing, transactions, and ACID compliance.",
       topics: ["Relational Modeling", "Normalization", "Indexing", "ACID Compliance"],
@@ -152,7 +143,6 @@ export const skillsData = {
     {
       name: "React.js",
       category: "frontend",
-      level: 88,
       badge: "Modern UI",
       description: "Component composition, custom hooks, reactive state, and performance optimization.",
       topics: ["Hooks & State", "Component Composition", "Virtual DOM", "Vite Tooling"],
@@ -160,7 +150,6 @@ export const skillsData = {
     {
       name: "Tailwind CSS",
       category: "frontend",
-      level: 92,
       badge: "Styling Engine",
       description: "Utility-first design, dark mode, responsive grids, and custom design tokens.",
       topics: ["Design Tokens", "Dark Mode", "Responsive Layout", "Glassmorphism"],
@@ -168,7 +157,6 @@ export const skillsData = {
     {
       name: "HTML5 & Semantic Web",
       category: "frontend",
-      level: 95,
       badge: "Web Standard",
       description: "Semantic document structure, accessibility (a11y), clean hierarchy, and SEO.",
       topics: ["Semantic Hierarchy", "Accessibility (a11y)", "SEO Best Practices", "DOM Engine"],
@@ -176,7 +164,6 @@ export const skillsData = {
     {
       name: "CSS3 & Animations",
       category: "frontend",
-      level: 88,
       badge: "Visual Polish",
       description: "CSS Grid, Flexbox, transitions, keyframes, 3D transforms, and hardware acceleration.",
       topics: ["CSS Grid", "Flexbox", "Keyframes", "3D Transforms"],
@@ -186,7 +173,6 @@ export const skillsData = {
     {
       name: "FastAPI",
       category: "backend",
-      level: 78,
       badge: "Modern API",
       description: "Asynchronous Python services, Pydantic validation, dependency injection, and OpenAPI routing.",
       topics: ["Async Handlers", "Pydantic Schemas", "Dependency Injection", "Swagger Docs"],
@@ -194,7 +180,6 @@ export const skillsData = {
     {
       name: "SQL",
       category: "backend",
-      level: 82,
       badge: "Querying",
       description: "Relational queries, complex joins, subqueries, grouping, aggregations, and constraints.",
       topics: ["Complex Joins", "Aggregations", "Subqueries", "Schema Constraints"],
@@ -202,7 +187,6 @@ export const skillsData = {
     {
       name: "SQLite",
       category: "backend",
-      level: 80,
       badge: "Embedded DB",
       description: "Local relational persistence, schema migration, transactional queries, and indexing.",
       topics: ["Schema Migrations", "Transactions", "Query Optimization", "Local Storage"],
@@ -210,7 +194,6 @@ export const skillsData = {
     {
       name: "REST API Design",
       category: "backend",
-      level: 85,
       badge: "Integration",
       description: "HTTP semantics, status codes, JSON payload architecture, and structured error handling.",
       topics: ["HTTP Semantics", "JSON Payloads", "Status Codes", "Error Handling"],
