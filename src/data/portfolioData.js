@@ -64,7 +64,7 @@ int main() {
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "CP Journey", href: "#cp" },
+  // { label: "CP Journey", href: "#cp" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Achievements", href: "#achievements" },
