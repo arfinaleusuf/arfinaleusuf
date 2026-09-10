@@ -40,7 +40,7 @@ function PortfolioContent() {
         <Hero />
         <About />
         <Skills />
-        <CompetitiveProgramming />
+        {/* <CompetitiveProgramming /> */}
         <Projects />
         <Education />
         <Achievements />

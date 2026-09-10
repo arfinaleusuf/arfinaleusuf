@@ -162,7 +162,7 @@ export const skillsData = {
       topics: ["Semantic Hierarchy", "Accessibility (a11y)", "SEO Best Practices", "DOM Engine"],
     },
     {
-      name: "CSS3 & Animations",
+      name: "CSS3",
       category: "frontend",
       badge: "Visual Polish",
       description: "CSS Grid, Flexbox, transitions, keyframes, 3D transforms, and hardware acceleration.",
@@ -175,14 +175,14 @@ export const skillsData = {
       category: "backend",
       badge: "Modern API",
       description: "Asynchronous Python services, Pydantic validation, dependency injection, and OpenAPI routing.",
-      topics: ["Async Handlers", "Pydantic Schemas", "Dependency Injection", "Swagger Docs"],
+      topics: ["Pydantic Schemas", "Dependency Injection", "Swagger Docs"],
     },
     {
       name: "SQL",
       category: "backend",
       badge: "Querying",
       description: "Relational queries, complex joins, subqueries, grouping, aggregations, and constraints.",
-      topics: ["Complex Joins", "Aggregations", "Subqueries", "Schema Constraints"],
+      topics: ["Aggregations", "Subqueries", "Schema Constraints"],
     },
     {
       name: "SQLite",
@@ -190,13 +190,6 @@ export const skillsData = {
       badge: "Embedded DB",
       description: "Local relational persistence, schema migration, transactional queries, and indexing.",
       topics: ["Schema Migrations", "Transactions", "Query Optimization", "Local Storage"],
-    },
-    {
-      name: "REST API Design",
-      category: "backend",
-      badge: "Integration",
-      description: "HTTP semantics, status codes, JSON payload architecture, and structured error handling.",
-      topics: ["HTTP Semantics", "JSON Payloads", "Status Codes", "Error Handling"],
     },
   ],
 };
@@ -381,8 +374,8 @@ export const educationData = [
     status: "Completed",
     badge: "GPA 5.00 / 5.00",
     description:
-      "Graduated with top academic honors (Golden GPA 5.00), building analytical discipline and study routines that support university computing.",
-    coursework: ["ICT", "Mathematics", "Business Studies", "English"],
+      "Graduated with top academic honors (GPA 5.00), building analytical discipline and study routines that support university computing.",
+    coursework: ["ICT", "Mathematics", "Physics", "Chemistry", "Biology", "English"],
     achievements: [
       "Achieved perfect GPA 5.00",
       "Top academic consistency distinction",
@@ -408,19 +401,19 @@ export const educationData = [
 ];
 
 export const achievementsData = [
-  {
-    id: 1,
-    title: "350+ Algorithmic Problems Solved",
-    category: "Competitive Programming",
-    icon: "code",
-    issuer: "Codeforces / LeetCode",
-    date: "2024 - Present",
-    description:
-      "Solved across Codeforces, LeetCode, and HackerRank covering dynamic programming, graphs, greedy algorithms, and data structures.",
-  },
+  // {
+  //   id: 1,
+  //   title: "350+ Algorithmic Problems Solved",
+  //   category: "Competitive Programming",
+  //   icon: "code",
+  //   issuer: "Codeforces / LeetCode",
+  //   date: "2024 - Present",
+  //   description:
+  //     "Solved across Codeforces, LeetCode, and HackerRank covering dynamic programming, graphs, greedy algorithms, and data structures.",
+  // },
   {
     id: 2,
-    title: "Perfect Golden GPA 5.00 (HSC)",
+    title: "Perfect GPA 5.00 (HSC)",
     category: "Academic Excellence",
     icon: "award",
     issuer: "Education Board",
@@ -428,16 +421,16 @@ export const achievementsData = [
     description:
       "Earned top academic distinction (GPA 5.00) in national Higher Secondary Certificate examinations.",
   },
-  {
-    id: 3,
-    title: "HackerRank 5-Star Badges (C++ & Problem Solving)",
-    category: "Skill Certification",
-    icon: "star",
-    issuer: "HackerRank",
-    date: "2024",
-    description:
-      "Earned 5-Star Gold Badges in C++ and Problem Solving, demonstrating mastery of STL, algorithms, and complexity optimization.",
-  },
+  // {
+  //   id: 3,
+  //   title: "HackerRank 5-Star Badges (C++ & Problem Solving)",
+  //   category: "Skill Certification",
+  //   icon: "star",
+  //   issuer: "HackerRank",
+  //   date: "2024",
+  //   description:
+  //     "Earned 5-Star Gold Badges in C++ and Problem Solving, demonstrating mastery of STL, algorithms, and complexity optimization.",
+  // },
   {
     id: 4,
     title: "Public Speaking & Debating Honors",
