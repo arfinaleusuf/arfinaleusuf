@@ -259,25 +259,24 @@ export const cpData = {
 
 export const projectsData = [
   {
-    id: "number-converter",
-    title: "Number Converter & Base Calculator",
-    category: "Tools & Algorithms",
+    id: "bangladesh-courier-service",
+    title: "Bangladesh Courier Service",
+    category: "Web Applications",
     featured: true,
-    image: "/image/number converter.png",
+    image: "/image/bangladesh-courier.png",
     description:
-      "Algorithmic multi-base converter supporting Binary, Decimal, Hexadecimal, and Octal with instant bit inspection.",
+      "A full-featured courier service web platform for Bangladesh, enabling parcel tracking, delivery management, and service booking with a clean responsive UI.",
     longDescription:
-      "An algorithmic utility for computing students and systems programmers. Provides real-time bidirectional base conversions, integer bitwise parsing, and validation with sub-millisecond reactivity.",
-    tags: ["JavaScript", "Bitwise Ops", "Base Math", "Tailwind CSS"],
-    liveUrl: "#number-converter",
+      "A comprehensive courier service web application designed for the Bangladeshi market. Features include parcel booking, real-time tracking, delivery zone management, and an intuitive dashboard — built with modern web technologies for fast, accessible performance.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    liveUrl: "https://bangladeshcourierservice.netlify.app/",
     githubUrl: "https://github.com/ArfinAlEusuf",
     highlights: [
-      "Bidirectional conversion across Binary, Decimal, Hex, and Octal",
-      "Bit-length calculation and nibble grouping",
-      "Strict input validation per numeral radix",
-      "Integrated live sandbox directly inside this portfolio",
+      "Parcel booking and delivery tracking interface",
+      "Responsive layout for mobile and desktop users",
+      "Clean, accessible UI with fast page load",
+      "Deployed on Netlify with continuous delivery",
     ],
-    interactive: true,
   },
   {
     id: "tea-house",
@@ -317,26 +316,6 @@ export const projectsData = [
       "Product showcase with smooth hover transitions",
       "Mobile-first responsive breakpoints",
       "Optimized static asset delivery",
-    ],
-  },
-  {
-    id: "dsa-visualizer",
-    title: "Graph Algorithm Visualizer",
-    category: "Tools & Algorithms",
-    featured: false,
-    image: "/image/lecture.jpg",
-    description:
-      "Visual simulator demonstrating graph traversal algorithms (BFS, DFS, Dijkstra) step-by-step with state tracking.",
-    longDescription:
-      "An educational computer science tool that renders graph nodes and adjacency matrices, stepping through queue/stack operations, visited sets, and shortest path relaxation with visual node highlighting.",
-    tags: ["C++ Logic", "React", "Graph Theory", "DSA"],
-    liveUrl: null,
-    githubUrl: "https://github.com/ArfinAlEusuf",
-    highlights: [
-      "Step-by-step traversal animation for BFS and DFS",
-      "Color-coded visited, queued, and finalized states",
-      "Custom graph topology input",
-      "Time complexity comparison metrics",
     ],
   },
 ];
