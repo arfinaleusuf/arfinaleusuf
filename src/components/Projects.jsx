@@ -20,37 +20,8 @@ export default function Projects() {
     <section id="projects" className="section-padding bg-slate-100/50 dark:bg-slate-950/70 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="PROJECTS"
           title="Featured Work"
-          subtitle="Software applications, algorithmic utilities, and responsive web systems."
         />
-
-        {/* Category Filters */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
-          {categories.map((cat) => {
-            const isActive = activeCategory === cat;
-            return (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`relative px-4 py-2 rounded-xl text-xs sm:text-sm font-mono font-medium transition-all duration-200 cursor-pointer ${
-                  isActive
-                    ? 'text-white font-semibold'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-xs'
-                }`}
-              >
-                {isActive && (
-                  <motion.div
-                    layoutId="project-cat-pill"
-                    className="absolute inset-0 bg-indigo-600 rounded-xl -z-10 shadow-lg shadow-indigo-600/30"
-                    transition={{ type: 'spring', stiffness: 350, damping: 30 }}
-                  />
-                )}
-                <span>{cat}</span>
-              </button>
-            );
-          })}
-        </div>
 
         {/* Projects Grid */}
         <motion.div

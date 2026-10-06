@@ -19,13 +19,12 @@ export default function Footer() {
                 <Code2 className="w-4 h-4" />
               </div>
               <span className="font-mono text-lg font-bold text-slate-900 dark:text-white tracking-tight">
-                {personalInfo.preferredName}
-                <span className="text-cyan-600 dark:text-cyan-400">.dev</span>
+                Arfin AL Eusuf
               </span>
             </div>
 
             <p className="text-slate-600 dark:text-slate-400 text-sm max-w-md leading-relaxed">
-              Competitive programmer and computer science student building clean algorithms and performant software.
+              Full Stack Developer and Computer Science Engineering student.
             </p>
 
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 dark:bg-emerald-500/5 border border-emerald-500/25 dark:border-emerald-500/20 px-3 py-1 rounded-full w-fit">
@@ -57,13 +56,6 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
           <div>
             &copy; {currentYear} {personalInfo.name}. All rights reserved.
-          </div>
-
-          <div className="flex items-center gap-1">
-            <span>Crafted with</span>
-            <span className="text-indigo-600 dark:text-indigo-400">React</span>,
-            <span className="text-cyan-600 dark:text-cyan-400">Three.js</span> &
-            <span className="text-emerald-600 dark:text-emerald-400">Tailwind</span>
           </div>
 
           <button

@@ -15,7 +15,6 @@ export default function Achievements() {
     <section id="achievements" className="section-padding bg-slate-100/50 dark:bg-slate-950/60 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="HONORS"
           title="Achievements"
           subtitle="Milestones across competitive programming, academics, and problem solving."
         />

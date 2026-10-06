@@ -20,7 +20,6 @@ export const personalInfo = {
     github: "https://github.com/ArfinAlEusuf",
     linkedin: "https://www.linkedin.com/in/arfinaleusuf/",
     codeforces: "https://codeforces.com/profile/ArfinAlEusuf",
-    leetcode: "https://leetcode.com/u/ArfinAlEusuf/",
     facebook: "https://www.facebook.com/ArfinAlEusuf/",
     instagram: "https://www.instagram.com/arfinaleusuf/",
   },
@@ -259,18 +258,18 @@ export const cpData = {
 
 export const projectsData = [
   {
-    id: "bangladesh-courier-service",
-    title: "Bangladesh Courier Service",
+    id: "SendBD",
+    title: "SendBD",
     category: "Web Applications",
     featured: true,
-    image: "/image/bangladesh-courier.png",
+    image: "/image/Screenshot_sendbd.png",
     description:
       "A full-featured courier service web platform for Bangladesh, enabling parcel tracking, delivery management, and service booking with a clean responsive UI.",
     longDescription:
       "A comprehensive courier service web application designed for the Bangladeshi market. Features include parcel booking, real-time tracking, delivery zone management, and an intuitive dashboard — built with modern web technologies for fast, accessible performance.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    liveUrl: "https://bangladeshcourierservice.netlify.app/",
-    githubUrl: "https://github.com/ArfinAlEusuf",
+    tags: ["HTML5", "Tailwind CSS", "DaisyUi","Responsive Design", "JavaScript", "React","fastAPI", "JWT Authentication"],
+    liveUrl: "https://sensational-stroopwafel-7684cb.netlify.app/",
+    githubUrl: "https://github.com/arfinaleusuf/SendBD-Frontend",
     highlights: [
       "Parcel booking and delivery tracking interface",
       "Responsive layout for mobile and desktop users",
@@ -278,6 +277,26 @@ export const projectsData = [
       "Deployed on Netlify with continuous delivery",
     ],
   },
+  {
+    id: "library-management-system",
+    title: "Library Management System",
+    category: "Web Applications",
+    featured: true,
+    image: "/image/Library_app.png",
+    description:
+      "A full-featured library management platform to track book inventories, manage member borrowings, and streamline daily circulation workflows.",
+    longDescription:
+      "An intuitive web application designed to simplify book cataloging and member interactions. Features include dynamic book search and filtering, real-time issue and return tracking, overdue fine calculation, and an administrative dashboard for inventory monitoring across devices.",
+    tags: ["HTML5", "Tailwind CSS", "DaisyUi","Responsive Design", "JavaScript", "React","fastAPI", "JWT Authentication"],
+    liveUrl: "https://library-management-arfin.netlify.app/",
+    githubUrl: "https://github.com/arfinaleusuf/library-management-system",
+    highlights: [
+      "Book catalog search with multi-category and author filtering",
+      "Automated borrowing and return status tracking",
+      "Member management with borrow-history analytics",
+      "Responsive admin dashboard for inventory control",
+    ],
+  }, ,
   {
     id: "tea-house",
     title: "Tea House - Artisan Storefront",
@@ -298,26 +317,7 @@ export const projectsData = [
       "Accessible semantic markup",
     ],
   },
-  {
-    id: "penguin-fashion",
-    title: "Penguin Fashion - Dynamic Apparel",
-    category: "Web Applications",
-    featured: true,
-    image: "/image/Penguin Fashion.png",
-    description:
-      "Modern fashion storefront featuring dynamic product showcases, responsive card grids, and streamlined navigation.",
-    longDescription:
-      "Built with utility-first modern CSS. Explores e-commerce layout patterns, interactive product cards, promotional hero banners, and responsive multi-column layouts across mobile and desktop.",
-    tags: ["Tailwind CSS", "Modern Web", "Responsive Grid", "E-commerce"],
-    liveUrl: "https://penguin-fashion-using-tailwind-smoky.vercel.app/",
-    githubUrl: "https://github.com/ArfinAlEusuf",
-    highlights: [
-      "Clean Tailwind design tokens and utility patterns",
-      "Product showcase with smooth hover transitions",
-      "Mobile-first responsive breakpoints",
-      "Optimized static asset delivery",
-    ],
-  },
+
 ];
 
 export const educationData = [
@@ -325,9 +325,9 @@ export const educationData = [
     id: "cse-degree",
     degree: "B.Sc. in Computer Science & Engineering",
     institution: "Department of Computer Science & Engineering",
-    period: "2024 - Present",
+    period: "Summer 2026 - Present",
     status: "Undergraduate",
-    badge: "Current Degree",
+    badge: "Currently Studying",
     description:
       "Undergraduate curriculum centered on algorithmic theory, systems engineering, object-oriented software design, and database systems.",
     coursework: [
@@ -335,13 +335,10 @@ export const educationData = [
       "Object-Oriented Programming (C++)",
       "Discrete Mathematics",
       "Database Management Systems (DBMS)",
-      "Digital Logic Design",
-      "Computer Architecture",
     ],
     achievements: [
       "Active participant in Intra-University Programming Contests",
       "Engaged in campus competitive programming problem reviews",
-      "Exploring advanced graph algorithms and dynamic programming",
     ],
     highlight: true,
   },
@@ -358,22 +355,6 @@ export const educationData = [
     achievements: [
       "Achieved perfect GPA 5.00",
       "Top academic consistency distinction",
-    ],
-    highlight: false,
-  },
-  {
-    id: "ssc",
-    degree: "Secondary School Certificate (SSC)",
-    institution: "M.K.C.M. Pilot Govt. High School",
-    period: "2017 - 2022",
-    status: "Completed",
-    badge: "GPA 4.83 / 5.00",
-    description:
-      "Built foundation in science, mathematics, and analytical reasoning while participating in student clubs and science olympiads.",
-    coursework: ["General Science", "Higher Mathematics", "Computer Basics"],
-    achievements: [
-      "Achieved GPA 4.83",
-      "Active in debating club and school committees",
     ],
     highlight: false,
   },
@@ -490,11 +471,5 @@ export const socialLinks = [
     description: "Contest ratings, submissions, and problem solving.",
     accent: "hover:border-emerald-500 hover:text-emerald-400",
   },
-  {
-    name: "LeetCode",
-    handle: "ArfinAlEusuf",
-    url: "https://leetcode.com/u/ArfinAlEusuf/",
-    description: "Algorithmic practice tracks and daily streaks.",
-    accent: "hover:border-amber-500 hover:text-amber-400",
-  },
+
 ];

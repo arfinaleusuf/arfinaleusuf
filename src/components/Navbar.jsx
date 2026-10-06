@@ -47,11 +47,10 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'glass-nav shadow-lg bg-white/85 dark:bg-slate-950/90 border-b border-slate-200/80 dark:border-slate-800/80 py-3'
           : 'bg-transparent py-5'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -66,12 +65,11 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex items-baseline font-mono text-lg font-bold tracking-tight text-slate-900 dark:text-white">
-              <span className="text-indigo-600 dark:text-indigo-400">&lt;</span>
               <span className="group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-                {personalInfo.preferredName}
+                Arfin Al Eusuf
               </span>
-              <span className="text-cyan-600 dark:text-cyan-400">.dev</span>
-              <span className="text-indigo-600 dark:text-indigo-400">/&gt;</span>
+              <span className="text-cyan-600 dark:text-cyan-400"></span>
+              
             </div>
           </div>
 
@@ -84,11 +82,10 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`relative px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                    isActive
+                  className={`relative px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${isActive
                       ? 'text-indigo-600 dark:text-white font-semibold'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
-                  }`}
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -104,15 +101,15 @@ export default function Navbar() {
           </div>
 
           {/* Right Action: Theme Toggle & Contact Button */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <ThemeToggle />
 
             <a
-              href="#contact"
+              href="/Arfin_Al_Eusuf_Resume.pdf"
+              download="Arfin_Al_Eusuf_Resume.pdf"
               className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-mono font-semibold transition-all shadow-lg shadow-indigo-600/25 hover:shadow-indigo-500/40 transform hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Get In Touch</span>
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <span>Download Resume</span>
             </a>
           </div>
 

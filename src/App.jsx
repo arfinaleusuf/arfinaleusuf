@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
-import CompetitiveProgramming from './components/CompetitiveProgramming';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
@@ -38,9 +37,8 @@ function PortfolioContent() {
       {/* Main Content Sections */}
       <main>
         <Hero />
-        <About />
+        <About/>
         <Skills />
-        {/* <CompetitiveProgramming /> */}
         <Projects />
         <Education />
         <Achievements />

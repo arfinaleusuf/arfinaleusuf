@@ -28,7 +28,7 @@ export default function Skills() {
     <section id="skills" className="section-padding bg-slate-100/50 dark:bg-slate-950/60 relative">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          tag="SKILLS"
+
           title="Technical Stack"
           subtitle="Core computer science fundamentals, programming languages, and web engineering."
         />

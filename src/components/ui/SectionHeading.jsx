@@ -11,14 +11,16 @@ export default function SectionHeading({ tag, title, subtitle, align = 'center' 
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 0.5 }}
       >
-        <div
-          className={`inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 mb-3 font-mono text-xs text-indigo-600 dark:text-indigo-400 font-semibold tracking-wider uppercase ${
-            isCenter ? 'mx-auto' : ''
-          }`}
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-400" />
-          <span>// {tag}</span>
-        </div>
+        {tag && (
+          <div
+            className={`inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 mb-3 font-mono text-xs text-indigo-600 dark:text-indigo-400 font-semibold tracking-wider uppercase ${
+              isCenter ? 'mx-auto' : ''
+            }`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-400" />
+            <span>// {tag}</span>
+          </div>
+        )}
 
         <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mt-1 mb-4">
           {title}

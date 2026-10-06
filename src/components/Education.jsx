@@ -11,7 +11,6 @@ export default function Education() {
 
       <div className="max-w-5xl mx-auto">
         <SectionHeading
-          tag="ACADEMICS"
           title="Education"
           subtitle="Computer science curriculum, core coursework, and academic milestones."
         />
