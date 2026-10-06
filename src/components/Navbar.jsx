@@ -59,11 +59,6 @@ export default function Navbar() {
             onClick={scrollToTop}
             className="flex items-center gap-2 cursor-pointer group"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 p-[1px] shadow-lg shadow-indigo-500/20">
-              <div className="w-full h-full bg-white dark:bg-slate-950 rounded-[11px] flex items-center justify-center group-hover:bg-slate-50 dark:group-hover:bg-slate-900 transition-colors">
-                <Code2 className="w-5 h-5 text-indigo-600 dark:text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
-              </div>
-            </div>
             <div className="flex items-baseline font-mono text-lg font-bold tracking-tight text-slate-900 dark:text-white">
               <span className="group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                 Arfin Al Eusuf

@@ -108,7 +108,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
-              Computer Science student focused on competitive programming, Data Structures & Algorithms, and performant software systems.
+              Passionate Computer Science student and Full Stack Developer focused on building scalable, user-centric web applications and robust backend systems. Driven by modern tech stacks, clean code, and solving real-world problems.
             </motion.p>
 
             {/* CTA Buttons & Socials */}
